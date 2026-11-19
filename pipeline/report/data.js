@@ -2,6 +2,7 @@
 window.BIO = {
  "generated": "2026-11-01",
  "snapshot": "UNII 4Aug2026 \u00b7 Drugs@FDA 01 Nov 2026 \u00b7 Orange Book 01 Nov 2026 \u00b7 EMA 01 Nov 2026 \u00b7 Health Canada 01 Nov 2026 \u00b7 Swissmedic 01 Nov 2026 \u00b7 PMDA 01 Nov 2026 \u00b7 GSRS relationship graph",
+ "market_as_of": "2026-11-19",
  "candidates": [
   {
    "name": "Idebenone",
@@ -36754,11 +36755,11 @@ window.BIO = {
   "foreign_rows": 18115,
   "in_us": 2030,
   "months_to_sunset": 34,
-  "prv_low": 180.0,
+  "prv_low": 190.0,
   "prv_high": 210.0,
-  "prv_high_status": "agreement",
+  "prv_high_status": "closed",
   "prv_high_drug": "GENGLYCOS",
-  "deals": 36,
+  "deals": 40,
   "peak": 350.0
  },
  "funnel": [
@@ -36971,248 +36972,6 @@ window.BIO = {
    "lat": 47.2
   }
  ],
- "bubbles": [
-  {
-   "name": "Vildagliptin",
-   "v": 30,
-   "orphan": false,
-   "area": "Diabetes Mellitus, Type 2"
-  },
-  {
-   "name": "Etoricoxib",
-   "v": 30,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Fusidic Acid",
-   "v": 30,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Rupatadine",
-   "v": 30,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Alfacalcidol",
-   "v": 29,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Bilastine",
-   "v": 29,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Zuclopenthixol",
-   "v": 29,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Amorolfine",
-   "v": 29,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Xylometazoline",
-   "v": 29,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Benzydamine",
-   "v": 28,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Bromhexine",
-   "v": 28,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Moxonidine",
-   "v": 28,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Gliclazide",
-   "v": 27,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Ambroxol",
-   "v": 27,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Etofenamate",
-   "v": 27,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Levosimendan",
-   "v": 27,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Cyproterone",
-   "v": 26,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Dapoxetine",
-   "v": 26,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Mebeverine",
-   "v": 26,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Racecadotril",
-   "v": 26,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Tibolone",
-   "v": 26,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Cytisinicline",
-   "v": 25,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Fenticonazole",
-   "v": 25,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Atosiban",
-   "v": 24,
-   "orphan": false,
-   "area": "Obstetric Labor, Premature"
-  },
-  {
-   "name": "Bromazepam",
-   "v": 24,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Piracetam",
-   "v": 24,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Carbetocin",
-   "v": 23,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Domperidone",
-   "v": 23,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Flucloxacillin",
-   "v": 23,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Itopride",
-   "v": 23,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Agomelatine",
-   "v": 22,
-   "orphan": false,
-   "area": "Depressive Disorder, Major"
-  },
-  {
-   "name": "Aceclofenac",
-   "v": 22,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Trimetazidine",
-   "v": 22,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Mianserin",
-   "v": 21,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Carbocysteine",
-   "v": 20,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Iobitridol",
-   "v": 20,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Nitrazepam",
-   "v": 20,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Sertindole",
-   "v": 20,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Sulthiame",
-   "v": 20,
-   "orphan": false,
-   "area": ""
-  },
-  {
-   "name": "Ebastine",
-   "v": 19,
-   "orphan": false,
-   "area": ""
-  }
- ],
  "breadthHist": [
   {
    "label": "1",
@@ -37262,7 +37021,7 @@ window.BIO = {
   },
   {
    "year": 2015,
-   "price": 150.0,
+   "price": 245.0,
    "type": "RPD",
    "drug": "CHOLBAM",
    "disease": "bile acid synthesis disorder",
@@ -37406,25 +37165,9 @@ window.BIO = {
   },
   {
    "year": 2024,
-   "price": 158.0,
-   "type": "RPD",
-   "drug": "IQIRVO",
-   "disease": "primary biliary cholangitis",
-   "status": "closed"
-  },
-  {
-   "year": 2024,
    "price": 103.0,
    "type": "TD",
    "drug": "IXCHIQ",
-   "disease": "chikungunya",
-   "status": "closed"
-  },
-  {
-   "year": 2024,
-   "price": 160.0,
-   "type": "TD",
-   "drug": "VIMKUNYA",
    "disease": "chikungunya",
    "status": "closed"
   },
@@ -37442,6 +37185,14 @@ window.BIO = {
    "type": "RPD",
    "drug": "OJEMDA",
    "disease": "pediatric low-grade glioma",
+   "status": "closed"
+  },
+  {
+   "year": 2024,
+   "price": 158.0,
+   "type": "RPD",
+   "drug": "SOHONOS",
+   "disease": "fibrodysplasia ossificans progressiva",
    "status": "closed"
   },
   {
@@ -37478,6 +37229,14 @@ window.BIO = {
   },
   {
    "year": 2025,
+   "price": 160.0,
+   "type": "TD",
+   "drug": "VIMKUNYA",
+   "disease": "chikungunya",
+   "status": "closed"
+  },
+  {
+   "year": 2026,
    "price": 200.0,
    "type": "RPD",
    "drug": "MODEYSO",
@@ -37504,17 +37263,17 @@ window.BIO = {
    "year": 2026,
    "price": 195.0,
    "type": "RPD",
-   "drug": "AVLAYAH",
-   "disease": "MPS II / Hunter syndrome",
+   "drug": "SEZABY",
+   "disease": "neonatal seizures",
    "status": "closed"
   },
   {
    "year": 2026,
-   "price": 195.0,
+   "price": 187.5,
    "type": "RPD",
-   "drug": "SEZABY",
-   "disease": "neonatal seizures",
-   "status": "agreement"
+   "drug": "YUVIWEL",
+   "disease": "achondroplasia",
+   "status": "closed"
   },
   {
    "year": 2026,
@@ -37526,10 +37285,42 @@ window.BIO = {
   },
   {
    "year": 2026,
+   "price": 195.0,
+   "type": "RPD",
+   "drug": "AVLAYAH",
+   "disease": "MPS II / Hunter syndrome",
+   "status": "closed"
+  },
+  {
+   "year": 2026,
    "price": 210.0,
    "type": "RPD",
    "drug": "GENGLYCOS",
    "disease": "glycogen storage disease Ia",
+   "status": "closed"
+  },
+  {
+   "year": 2026,
+   "price": 203.0,
+   "type": "RPD",
+   "drug": "FAYUVI",
+   "disease": "Sanfilippo syndrome type A",
+   "status": "agreement"
+  },
+  {
+   "year": 2026,
+   "price": 190.0,
+   "type": "RPD",
+   "drug": "EMCITATE",
+   "disease": "MCT8 deficiency",
+   "status": "agreement"
+  },
+  {
+   "year": 2026,
+   "price": 205.0,
+   "type": "RPD",
+   "drug": "ISEMBYLD",
+   "disease": "spinal muscular atrophy",
    "status": "agreement"
   }
  ],
@@ -37542,7 +37333,7 @@ window.BIO = {
   },
   {
    "year": 2015,
-   "RPD": 500.0,
+   "RPD": 595.0,
    "TD": 0,
    "MCM": 0
   },
@@ -37591,18 +37382,18 @@ window.BIO = {
   {
    "year": 2024,
    "RPD": 671.0,
-   "TD": 263.0,
+   "TD": 103.0,
    "MCM": 0
   },
   {
    "year": 2025,
-   "RPD": 505.0,
-   "TD": 0,
+   "RPD": 305.0,
+   "TD": 160.0,
    "MCM": 0
   },
   {
    "year": 2026,
-   "RPD": 1185.0,
+   "RPD": 2170.5,
    "TD": 0,
    "MCM": 0
   }

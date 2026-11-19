@@ -1,7 +1,7 @@
 /* ============================================================
    STATE OF BIO 2026 — app.js
    Design adapted from a data-almanac template. Charts labelled
-   "RDH pipeline" / "SEC 8-K" are driven by real data in data.js
+   "RDH pipeline" / "Filings & seller disclosures" use real data in data.js
    (window.BIO); "Illustrative" charts use seeded synthetic data
    for the design only.
    ============================================================ */
@@ -55,7 +55,7 @@ document.querySelectorAll(".share-btn").forEach(btn => {
 });
 
 document.getElementById("tickerInfo").addEventListener("click", () =>
-  showToast("Pipeline figures are live RareDiseaseHedge output; voucher prices are SEC-disclosed.")
+  showToast("Pipeline figures are RareDiseaseHedge output; voucher prices come from filings and seller disclosures.")
 );
 
 const fmtM = v => v >= 1000 ? "$" + (v / 1000).toFixed(2) + "B" : "$" + Math.round(v) + "M";
@@ -76,7 +76,7 @@ const fmtCount = v =>
     [h.prv_high_status === "agreement" ? "Top recent voucher (signed, not closed)" : "Top recent voucher",
      h.prv_high != null ? "$" + h.prv_high + "M" : "", ""],
     ["Record sale", h.peak != null ? "$" + h.peak + "M" : "", ""],
-    ["Vouchers sold", h.deals, ""],
+    ["Tracked voucher deals", h.deals, ""],
     ["Months to sunset", h.months_to_sunset, ""],
     ["Foreign approvals scanned", h.foreign_rows != null ? fmtCount(h.foreign_rows) : "", ""],
   ].filter(it => it[1] !== undefined && it[1] !== "");
@@ -302,7 +302,7 @@ function slInit() {
 slInit();
 
 /* ============================================================
-   VOUCHER MARKET — real PRV sales (SEC 8-K)
+   VOUCHER MARKET — tracked PRV deals (filings and seller disclosures)
    Primary: annual $ disclosed, stacked by voucher type.
    Secondary: cumulative disclosed value.
    Tabs filter which voucher types are included.
@@ -326,11 +326,11 @@ function ecoTypes() { return (ECO_VIEWS.find(v => v.key === eco.current) || ECO_
 function syncEcoText() {
   const v = ECO_VIEWS.find(x => x.key === eco.current) || ECO_VIEWS[0];
   document.getElementById("ecoTitle").textContent =
-    v.key === "all" ? "PRV SALES BY YEAR" : v.tab.toUpperCase() + " VOUCHER SALES";
+    v.key === "all" ? "PRV DEALS BY YEAR" : v.tab.toUpperCase() + " VOUCHER DEALS";
   document.getElementById("ecoBarMethod").innerHTML =
-    "<strong>Methodology:</strong> Each bar is the total disclosed sale value of Priority Review Vouchers sold that year, from SEC 8-K filings or the seller's own disclosure (2014–2026), stacked by voucher type. 2026 includes signed agreements not yet confirmed closed (SEZABY, GENGLYCOS). Undisclosed deals are excluded, so totals are a floor.";
+    "<strong>Methodology:</strong> Each bar totals tracked, publicly disclosed voucher deal values by announcement year and type, from SEC filings and seller disclosures. The 2026 total includes signed agreements not yet confirmed closed (FAYUVI, EMCITATE, ISEMBYLD). This manually maintained sample is incomplete and does not represent closed sales alone. Market data reviewed through " + BIO.market_as_of + ".";
   document.getElementById("ecoMethod").innerHTML =
-    "<strong>Methodology:</strong> Cumulative disclosed PRV sale value across all tracked deals; the same series as the bars above, summed forward.";
+    "<strong>Methodology:</strong> Cumulative disclosed PRV deal value across the tracked sample; the same series as the bars above, summed forward.";
 }
 
 function buildTabs() {
@@ -480,72 +480,6 @@ function drawWallets() {
     .on("mouseleave", ev => { hideTip(); d3.select(ev.currentTarget).attr("fill", "#16213e"); })
     .transition().duration(600).delay((d, i) => i * 70).ease(d3.easeCubicOut)
     .attr("y", d => y(d.n)).attr("height", d => H - M.bottom - y(d.n));
-}
-
-/* ============================================================
-   CANDIDATES — real bubbles (RDH pipeline)
-   ============================================================ */
-const BUBBLE_PALETTE = [
-  "#2f6df6", "#8a4fe0", "#1f9d57", "#f2765a", "#e0189a", "#e8961e",
-  "#23c0d8", "#b3232b", "#9acd32", "#3d6b99", "#c94f7c", "#5f8575",
-  "#7c5cd6", "#2d9d9a", "#d4772b",
-];
-function drawBubbles() {
-  const host = document.getElementById("bubbleChart");
-  const W = host.clientWidth, H = Math.max(560, host.clientHeight);
-  host.innerHTML = "";
-  const svg = d3.select(host).append("svg").attr("width", W).attr("height", H);
-
-  const nodes = (BIO.bubbles || []).map((b, i) => ({
-    name: b.name, v: Math.max(1, b.v), orphan: b.orphan, area: b.area,
-    color: BUBBLE_PALETTE[i % BUBBLE_PALETTE.length], i,
-  }));
-  if (!nodes.length) return;
-  const maxV = d3.max(nodes, d => d.v);
-  const kR = Math.min(104, H / 5) / Math.sqrt(maxV);
-  nodes.forEach(d => (d.r = Math.max(10, kR * Math.sqrt(d.v))));
-
-  const frac = x => x - Math.floor(x);
-  nodes.forEach(d => (d.sortKey = frac(Math.sin(d.i * 12.9898) * 43758.5453)));
-  const ordered = [...nodes].sort((a, b) => a.sortKey - b.sortKey);
-  const m = 96;
-  ordered.forEach((d, idx) => (d.tx = m + (idx / Math.max(1, ordered.length - 1)) * (W - 2 * m)));
-
-  const sim = d3.forceSimulation(nodes)
-    .force("x", d3.forceX(d => d.tx).strength(0.26))
-    .force("y", d3.forceY(H / 2).strength(0.09))
-    .force("collide", d3.forceCollide(d => d.r + 2.5).strength(1))
-    .force("charge", d3.forceManyBody().strength(2.5))
-    .stop();
-  for (let t = 0; t < 340; t++) sim.tick();
-  nodes.forEach(d => {
-    d.x = Math.max(d.r + 4, Math.min(W - d.r - 4, d.x));
-    d.y = Math.max(d.r + 4, Math.min(H - d.r - 4, d.y));
-  });
-
-  const g = svg.selectAll("g").data(nodes).join("g").attr("transform", d => `translate(${d.x},${d.y})`);
-  g.append("circle").attr("fill", d => d.color).attr("opacity", 0.95).attr("r", 0)
-    .attr("stroke", d => d.orphan ? "#f6c700" : "none").attr("stroke-width", d => d.orphan ? 3 : 0)
-    .style("cursor", "pointer")
-    .on("mousemove", (ev, d) => showTip(
-      `<div class="tt-title">${d.name}</div>${d.v} EEA countr${d.v === 1 ? "y" : "ies"}` +
-      (d.orphan ? " · EU orphan" : "") + (d.area ? `<div style="opacity:.6;margin-top:4px">${d.area}</div>` : ""),
-      ev.clientX, ev.clientY))
-    .on("mouseleave", hideTip)
-    .transition().duration(680).delay((d, i) => i * 16).ease(d3.easeBackOut.overshoot(1.1))
-    .attr("r", d => d.r);
-
-  const label = g.filter(d => d.r > 26);
-  label.append("text").attr("text-anchor", "middle").attr("dy", "-0.15em")
-    .style("font-family", "var(--font-kicker)").style("font-weight", "600")
-    .style("text-transform", "uppercase").style("letter-spacing", ".02em")
-    .style("fill", "#fff").style("pointer-events", "none")
-    .style("font-size", d => Math.max(9, Math.min(d.r / 4.2, 16)) + "px")
-    .text(d => d.name.length * (d.r / 4.2) * 0.6 > d.r * 1.9 ? d.name.split(" ")[0] : d.name);
-  label.append("text").attr("text-anchor", "middle").attr("dy", "1.25em")
-    .style("font-family", "var(--font-mono)").style("fill", "rgba(255,255,255,.9)")
-    .style("pointer-events", "none").style("font-size", d => Math.max(9, Math.min(d.r / 5.5, 13)) + "px")
-    .text(d => d.v);
 }
 
 /* ============================================================
@@ -776,7 +710,6 @@ function drawFor(id) {
   drawn.add(id);
   if (id === "ecosystem") { drawEcoBars(true); drawEco(true); }
   if (id === "wallets") drawWallets();
-  if (id === "blockchains") drawBubbles();
   if (id === "categories") drawSunburst();
   if (id === "technologies") drawMosaic();
   if (id === "locations") drawMap();
@@ -807,7 +740,6 @@ addEventListener("resize", () => {
     buildMosaic(); heroScrollUpdate();
     if (drawn.has("ecosystem")) { drawEcoBars(false); drawEco(false); }
     if (drawn.has("wallets")) drawWallets();
-    if (drawn.has("blockchains")) drawBubbles();
     if (drawn.has("categories")) drawSunburst();
     if (drawn.has("technologies")) drawMosaic();
     if (drawn.has("locations")) drawMap();

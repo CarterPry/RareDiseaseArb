@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>State of Bio 2026 — RareDiseaseHedge</title>
-<meta name="description" content="The annual State of Bio report: the rare-disease Priority Review Voucher opportunity. Charts marked ‘pipeline’ are real RareDiseaseHedge output and the voucher-market chart is real SEC 8-K data; charts marked ‘illustrative’ are for design only." />
+<meta name="description" content="The annual State of Bio report: the rare-disease Priority Review Voucher opportunity. Pipeline charts use RareDiseaseHedge output and voucher-market charts use filings and seller disclosures; charts marked ‘illustrative’ are for design only." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600&family=Playfair+Display:ital,wght@1,600;1,700&family=IBM+Plex+Mono:wght@400;500;600&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -67,8 +67,8 @@
     <p class="kicker">THE SHORTLIST</p>
     <h2 class="giant"><span id="slCount">—</span> CANDIDATES</h2>
     <p class="sl-intro">Drugs with a real marketing authorisation abroad whose active moiety has
-      <b>never been approved in the US</b> — the population FD&amp;C Act §529 makes eligible for a rare-pediatric
-      Priority Review Voucher. Search the full pipeline output; a match to Orphanet adds a real
+      <b>never been approved in the US</b> — a first screen for the prior-approval requirement under FD&amp;C Act §529.
+      Voucher eligibility also depends on other criteria and human review. Search the full pipeline output; a match to Orphanet adds a real
       <span class="badge badge-rare">rare</span> / <span class="badge badge-ped">pediatric</span> flag.</p>
     <p class="sl-fresh" id="slFresh"></p>
 
@@ -91,7 +91,7 @@
 <section class="section section--cream reveal" id="ecosystem">
   <div class="wrap">
     <p class="kicker">THE VOUCHER MARKET</p>
-    <h2 class="giant" id="ecoTitle">PRV SALES BY YEAR</h2>
+    <h2 class="giant" id="ecoTitle">PRV DEALS BY YEAR</h2>
   </div>
   <div class="tabstrip">
     <div class="wrap tabstrip-inner" id="metricTabs" role="tablist"><!-- filled by JS --></div>
@@ -100,16 +100,16 @@
   <div class="wrap chart-block">
     <div class="chart-tools">
       <span class="chart-caption">Annual · by voucher type</span>
-      <button class="share-btn" data-share="PRV sales by year">⇪&nbsp; SHARE</button>
+      <button class="share-btn" data-share="PRV deals by year">⇪&nbsp; SHARE</button>
     </div>
     <div class="chart-flex">
-      <div class="ylabel-rail"><span class="ylabel" id="ecoBarYlabel">Disclosed sale value (USD)</span></div>
+      <div class="ylabel-rail"><span class="ylabel" id="ecoBarYlabel">Disclosed deal value (USD)</span></div>
       <div class="legend" id="ecoBarLegend"></div>
       <div class="chart-host" id="ecoBarChart"></div>
     </div>
     <div class="chart-footer">
       <p class="methodology" id="ecoBarMethod"></p>
-      <div class="source-pill">SOURCE&nbsp;&nbsp;<strong>◍ SEC 8-K filings</strong></div>
+      <div class="source-pill">SOURCE&nbsp;&nbsp;<strong>◍ Filings &amp; seller disclosures</strong></div>
     </div>
   </div>
 
@@ -125,7 +125,7 @@
     </div>
     <div class="chart-footer">
       <p class="methodology" id="ecoMethod"></p>
-      <div class="source-pill">SOURCE&nbsp;&nbsp;<strong>◍ SEC 8-K filings</strong></div>
+      <div class="source-pill">SOURCE&nbsp;&nbsp;<strong>◍ Filings &amp; seller disclosures</strong></div>
     </div>
   </div>
 </section>
@@ -149,31 +149,8 @@
   </div>
 </section>
 
-<!-- ======================= CANDIDATES / BUBBLES ======================= -->
-<section class="section section--cream reveal" id="blockchains">
-  <div class="wrap">
-    <p class="kicker">THE PIPELINE</p>
-    <h2 class="giant">CANDIDATES</h2>
-    <div class="row-tools">
-      <div class="select-pill">
-        <select id="bubbleYear" aria-label="View">
-          <option value="2026" selected>By EEA reach</option>
-        </select>
-      </div>
-      <button class="share-btn" data-share="Candidates by reach">⇪&nbsp; SHARE</button>
-    </div>
-  </div>
-  <div class="wrap chart-block">
-    <div class="chart-host chart-host--tall" id="bubbleChart"></div>
-    <div class="chart-footer">
-      <p class="methodology"><strong>Methodology:</strong> Bubble area is proportional to the number of EEA countries in which each candidate is authorised. Gold-ringed bubbles also carry an EU orphan-medicine flag. Top 40 candidates shown; real pipeline output.</p>
-      <div class="source-pill">SOURCE&nbsp;&nbsp;<strong>◔ RDH pipeline</strong></div>
-    </div>
-  </div>
-</section>
-
 <!-- ======================= THERAPEUTIC AREAS / SUNBURST ======================= -->
-<section class="section section--white reveal" id="categories">
+<section class="section section--cream reveal" id="categories">
   <div class="wrap">
     <p class="kicker">WHERE VOUCHERS ARE WON</p>
     <h2 class="giant">DISEASE AREAS</h2>
@@ -201,7 +178,7 @@
 </section>
 
 <!-- ======================= MODALITIES / MOSAIC ======================= -->
-<section class="section section--cream reveal" id="technologies">
+<section class="section section--white reveal" id="technologies">
   <div class="wrap">
     <p class="kicker">HOW THEY'RE MADE</p>
     <h2 class="giant">MODALITIES</h2>
@@ -226,7 +203,7 @@
 </section>
 
 <!-- ======================= APPROVAL MAP / BUBBLE MAP ======================= -->
-<section class="section section--white reveal" id="locations">
+<section class="section section--cream reveal" id="locations">
   <div class="wrap">
     <p class="kicker">THE PIPELINE</p>
     <h2 class="giant">WHERE THEY'RE APPROVED</h2>
@@ -268,15 +245,14 @@
       <nav class="footer-nav">
         <a href="#shortlist">Shortlist</a>
         <a href="#ecosystem">Market</a>
-        <a href="#blockchains">Candidates</a>
         <a href="#reports">Explore</a>
       </nav>
     </div>
     <p class="footer-disclaimer">
       This page presents the RareDiseaseHedge "Funnel A" screen — drug active moieties approved by a foreign
-      regulator and never approved in the United States, which the FD&amp;C Act §529 makes eligible for a rare-pediatric
-      Priority Review Voucher. Charts labelled <strong>RDH pipeline</strong> and <strong>SEC 8-K filings</strong> are
-      real: candidate figures come from the pipeline's output, and voucher prices from SEC 8-K disclosures. Charts
+      regulator and never approved in the United States, a first screen for the prior-approval requirement under FD&amp;C Act §529.
+      Other voucher criteria require assessment and human review. Charts labelled <strong>RDH pipeline</strong> and <strong>Filings &amp; seller disclosures</strong> are
+      real: candidate figures come from the pipeline's output, and voucher prices from filings and seller disclosures. Charts
       labelled <strong>Illustrative</strong> (disease areas, modalities) are shaped for the design and are not pipeline
       output. Nothing here is investment, legal, business or tax advice, nor an offer or solicitation. The visual design
       is adapted from a data-almanac template.

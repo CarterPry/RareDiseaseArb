@@ -32,7 +32,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 PIPE = os.path.join(ROOT, "pipeline")
 SITE = os.path.join(HERE, "_site")
-BASE_URL = "https://rarediseasehedge.carterpry.com"
+BASE_URL = "https://arbs.raredisease.carterpry.com"
 
 
 # --------------------------------------------------------------- markdown -> html
@@ -200,8 +200,9 @@ def candidates_page(bio):
     body = (f"<h1>{n} candidates</h1>"
             f"<p>Every drug in the RareDiseaseHedge \u201cFunnel A\u201d screen: a real marketing "
             f"authorisation from a foreign regulator (EMA, EEA national, Health Canada, Swissmedic, PMDA) "
-            f"whose active moiety has <strong>never been approved in the United States</strong> \u2014 the "
-            f"population FD&amp;C Act \u00a7529 makes eligible for a rare-pediatric Priority Review Voucher. "
+            f"whose active moiety has <strong>never been approved in the United States</strong> \u2014 a "
+            f"first screen for the prior-approval requirement under FD&amp;C Act \u00a7529. Other voucher "
+            f"criteria also require assessment and human review. "
             f"Sorted by how many EEA countries authorise the drug (widest reach first).</p>"
             f"<p>Data snapshot: {e(bio.get('snapshot',''))}. Generated {e(bio.get('generated',''))}. "
             f"Also available as <a href=\"llms-full.txt\">plain text</a> and "
@@ -219,8 +220,8 @@ def llms_txt(bio):
 
 > A screen of drugs approved by a foreign regulator (EMA, EEA national registers via
 > the EMA Article 57 database, Health Canada, Swissmedic, PMDA) whose active moiety has
-> never been approved in the United States. That is the population the FD&C Act
-> \u00a7529 makes eligible for a rare-pediatric Priority Review Voucher (PRV). Each
+> never been approved in the United States. This screens one prior-approval requirement
+> under FD&C Act \u00a7529; other voucher criteria also require assessment and human review. Each
 > candidate carries a machine-drafted \u00a7529 eligibility checklist plus PubMed,
 > ClinicalTrials.gov, ChEMBL, Orphadata, EU orphan-designation and FDA complete-response
 > signals. Automated agents and AI assistants are welcome to read every page here.
@@ -233,7 +234,7 @@ Generated: {bio.get("generated", "")}
 - Multi-regulator candidates: {h.get("multi_regulator")}
 - Dossier-only (unnamed) rows: {h.get("dossier_only")}; rows queued for human review: {h.get("review")}
 - Foreign approval rows screened: {h.get("foreign_rows")}; of which already in the US record: {h.get("in_us")}
-- Disclosed PRV sales tracked (SEC 8-K): {h.get("deals")}; 2026 range US$ {h.get("prv_low")}M\u2013{h.get("prv_high")}M; record US$ {h.get("peak")}M (2015){" — top 2026 figure is a signed, unclosed agreement" if h.get("prv_high_status") == "agreement" else ""}
+- Disclosed PRV deals tracked (filings and seller disclosures): {h.get("deals")}; latest six RPD deals US$ {h.get("prv_low")}M–{h.get("prv_high")}M; record US$ {h.get("peak")}M (2015){" — top recent figure is a signed, unclosed agreement" if h.get("prv_high_status") == "agreement" else ""}; market data reviewed through {bio.get("market_as_of")}. This sample is incomplete and includes unclosed agreements.
 - Months until the rare-pediatric PRV programme sunset: {h.get("months_to_sunset")}
 
 ## Pages
@@ -246,7 +247,7 @@ Generated: {bio.get("generated", "")}
 - [Raw pipeline output, JSON]({BASE_URL}/data/summary.json): everything above, machine-readable
 
 ## Notes
-- Charts labelled "RDH pipeline" and "SEC 8-K filings" are real data; charts labelled "Illustrative" (disease areas, modalities) are design placeholders.
+- Charts labelled "RDH pipeline" and "Filings & seller disclosures" use real data; charts labelled "Illustrative" (disease areas, modalities) are design placeholders.
 - Nothing on this site is investment, legal, business or tax advice.
 """
 
@@ -348,6 +349,7 @@ def main():
     idx = (idx.replace('href="../ui/index.html"', 'href="list/"')
               .replace('href="../data/out/funnel_report.md"', 'href="funnel.html"')
               .replace('href="../../AUDIT-2026-08-29.md"', 'href="audit.html"'))
+    idx = idx.replace('</head>', f'<link rel="canonical" href="{BASE_URL}/" />\n</head>', 1)
     # pre-render the shortlist so the candidates exist in the raw HTML (AI
     # fetchers, search crawlers and reader modes rarely execute app.js)
     bio = load_bio()
