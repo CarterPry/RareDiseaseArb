@@ -1,4 +1,4 @@
-# RareDiseaseHedge Dashboard v2 — Design Specification
+# RareDiseaseArb Dashboard v2 — Design Specification
 
 **Document owner:** Senior Product / UX Designer  
 **Date:** 2026-08-07  

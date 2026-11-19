@@ -1,4 +1,4 @@
-# RareDiseaseHedge — one place for the whole pipeline + site build.
+# RareDiseaseArb — one place for the whole pipeline + site build.
 # The manual 6-step chain (fetch -> diff -> enrich -> ui -> report -> deploy) is
 # what made refreshes error-prone; every step now has a target and `make all`
 # runs them in order. `make test` gates changes on the accuracy harness.
@@ -18,7 +18,7 @@
 
 PY := python3
 PIPE := pipeline
-PROJECT := rarediseasehedge
+PROJECT := rarediseasearb
 
 .PHONY: deps fetch pipeline enrich ui report site deploy test test-real check all refresh clean
 

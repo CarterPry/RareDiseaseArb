@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-RareDiseaseHedge — candidate-discovery diff (Funnel A enumeration).
+RareDiseaseArb — candidate-discovery diff (Funnel A enumeration).
 
 Implements sources/00-CANDIDATE-DISCOVERY-METHOD.md end to end:
 

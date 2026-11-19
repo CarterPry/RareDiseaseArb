@@ -1,7 +1,7 @@
 # HANDOFF — session state, log, and what's left
 
 **Session date:** 2026-08-05 (session 1), 2026-08-05 (session 2 — recovery)
-**Working directory:** `/Users/carte/Downloads/RareDiseaseHedge` (was empty at session start; not actually a git repo despite the initial status snapshot — run `git init` if you want history)
+**Working directory:** `/Users/carte/Downloads/RareDisease*` (glob for the original directory) (was empty at session start; not actually a git repo despite the initial status snapshot — run `git init` if you want history)
 **Stopped:** deliberately, at user request, mid-research. Nothing is broken; work is partitioned cleanly.
 
 ---
@@ -46,7 +46,7 @@ Also recovered:
 ## 0.1 SESSION 2 COMPLETE — final state (2026-08-06)
 
 **All research tracks in §5 and §9 are now closed.** 59 files, ~2.5 MB, in a private GitHub repo
-(`CarterPry/RareDiseaseHedge`) with continuous auto-push via `scripts/autosync.sh`.
+(`CarterPry/RareDiseaseArb`) with continuous auto-push via `scripts/autosync.sh`.
 
 **Two findings that changed the strategy since §0 was written:**
 
@@ -273,9 +273,9 @@ These cannot be resolved by research — someone has to ask.
 
 ## 8. Where the raw material is
 
-- **Agent reports (JSON-wrapped):** `/Users/carte/.claude/projects/-Users-carte-Downloads-RareDiseaseHedge/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/tool-results/` — extract with `python3 -c "import json;print(''.join(b['text'] for b in json.load(open(F))))"`
+- **Agent reports (JSON-wrapped; path contains a glob):** `/Users/carte/.claude/projects/-Users-carte-Downloads-*/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/tool-results/` — extract with `python3 -c "import json;print(''.join(b['text'] for b in json.load(open(F))))"`
 - **Full subagent transcripts:** `.../subagents/agent-*.jsonl` — 60 files. **This is where the killed agents' partial work lives** (5b's Google Patents BigQuery findings, 5c/5d's foreign-regulator list work). Worth mining before re-running those.
-- **Scratchpad — 349 files, ~730 MB of downloaded primary source:** `/private/tmp/claude-501/-Users-carte-Downloads-RareDiseaseHedge/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/scratchpad/`
+- **Scratchpad — 349 files, ~730 MB of downloaded primary source (historical path contains a glob):** `/private/tmp/claude-501/-Users-carte-Downloads-*/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/scratchpad/`
   Includes `UNII_Data.zip`, `UNIIs.zip`, `360ff_prelim.html` (the statute), NewSTEPs newborn-screening annual reports 2021/2022/2024, BoMRA site dumps, BRIMS JS bundle and JSON, KEGG BRITE extracts, an fda.gov URL sweep (`allurls.txt`, 6.6 MB), Orphanet XML (`ages.xml`), and more. **This is a temp directory — copy anything you want to keep into the repo.**
 
 ---

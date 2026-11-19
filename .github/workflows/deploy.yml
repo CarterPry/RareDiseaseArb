@@ -43,7 +43,7 @@ jobs:
         run: python pipeline/report/build_site.py
       - name: deploy to Cloudflare Pages
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' }}
-        run: npx --yes wrangler@latest pages deploy pipeline/report/_site --project-name=rarediseasehedge --branch=main --commit-dirty=true
+        run: npx --yes wrangler@latest pages deploy pipeline/report/_site --project-name=rarediseasearb --branch=main --commit-dirty=true
       - name: fail if secrets missing
         if: ${{ env.CLOUDFLARE_API_TOKEN == '' }}
         run: |

@@ -1,4 +1,4 @@
-# RareDiseaseHedge — Data Source Map
+# RareDiseaseArb — Data Source Map
 
 Source inventory and machine-access pathways for a rare-disease drug repurposing pipeline. Every URL in these files was fetched live on **2026-08-05** and is marked **VERIFIED** or **UNVERIFIED**. Byte counts, record counts and HTTP statuses are measured, not remembered.
 

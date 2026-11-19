@@ -1,7 +1,7 @@
 /* ============================================================
    STATE OF BIO 2026 — app.js
    Design adapted from a data-almanac template. Charts labelled
-   "RDH pipeline" / "Filings & seller disclosures" use real data in data.js
+   "RareDiseaseArb pipeline" / "Filings & seller disclosures" use real data in data.js
    (window.BIO); "Illustrative" charts use seeded synthetic data
    for the design only.
    ============================================================ */
@@ -55,7 +55,7 @@ document.querySelectorAll(".share-btn").forEach(btn => {
 });
 
 document.getElementById("tickerInfo").addEventListener("click", () =>
-  showToast("Pipeline figures are RareDiseaseHedge output; voucher prices come from filings and seller disclosures.")
+  showToast("Pipeline figures are RareDiseaseArb output; voucher prices come from filings and seller disclosures.")
 );
 
 const fmtM = v => v >= 1000 ? "$" + (v / 1000).toFixed(2) + "B" : "$" + Math.round(v) + "M";
@@ -143,7 +143,7 @@ buildMosaic();
 heroScrollUpdate();
 
 /* ============================================================
-   SHORTLIST — searchable candidate list (RDH pipeline)
+   SHORTLIST — searchable candidate list (RareDiseaseArb pipeline)
    ============================================================ */
 const SL = {
   q: "", sort: "reach",
@@ -445,7 +445,7 @@ function drawEco(animate) {
 }
 
 /* ============================================================
-   PIPELINE BREADTH — real histogram (RDH pipeline)
+   PIPELINE BREADTH — real histogram (RareDiseaseArb pipeline)
    ============================================================ */
 function drawWallets() {
   const host = document.getElementById("walletChart");
@@ -657,7 +657,7 @@ function drawMosaic(year) {
 document.getElementById("techYear").addEventListener("change", ev => drawMosaic(+ev.target.value));
 
 /* ============================================================
-   APPROVAL MAP — real country counts (RDH pipeline)
+   APPROVAL MAP — real country counts (RareDiseaseArb pipeline)
    ============================================================ */
 let mapWorld = null;
 async function drawMap() {

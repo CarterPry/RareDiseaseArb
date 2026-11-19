@@ -1,4 +1,4 @@
-# PROMISE-SCORE MODEL — RareDiseaseHedge Candidate Ranking
+# PROMISE-SCORE MODEL — RareDiseaseArb Candidate Ranking
 
 **Author:** Buy-side biotech analyst perspective  
 **Date:** 2026-08-07  

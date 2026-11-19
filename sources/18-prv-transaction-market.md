@@ -143,7 +143,7 @@ The Securities and Exchange Commission's EDGAR system is the primary machine-rea
 **Required User-Agent header:** `User-Agent: <CompanyName/AppName> <contact-email>`  
 SEC EDGAR requires this header for programmatic access. Requests without a properly declared User-Agent are rate-limited or blocked (HTTP 403 "Undeclared Automated Tool" response).
 
-**Example:** `User-Agent: RareDiseaseHedge-Research carterpry@gmail.com`
+**Example:** `User-Agent: RareDiseaseArb-Research carterpry@gmail.com`
 
 **Rate limits:** EDGAR's developer documentation states a maximum of 10 requests per second. In practice, the API will return rate-limit responses if you exceed this. For a monitoring script, 1 request per second is safe and comfortable.
 
@@ -224,16 +224,16 @@ This returns an Atom feed of the most recent 40 Form 8-K filings across all comp
 ```bash
 # All PRV-related 8-Ks filed today (run daily)
 curl -s "https://efts.sec.gov/LATEST/search-index?q=%22priority+review+voucher%22+%22asset+purchase+agreement%22&dateRange=custom&startdt=$(date +%Y-%m-%d)&enddt=$(date +%Y-%m-%d)&forms=8-K" \
-  -H "User-Agent: RareDiseaseHedge-Research carterpry@gmail.com"
+  -H "User-Agent: RareDiseaseArb-Research carterpry@gmail.com"
 
 # All PRV sale announcements in the past 90 days
 START=$(python3 -c "from datetime import date,timedelta; print((date.today()-timedelta(days=90)).isoformat())")
 curl -s "https://efts.sec.gov/LATEST/search-index?q=%22priority+review+voucher%22+%22asset+purchase+agreement%22&dateRange=custom&startdt=${START}&enddt=$(date +%Y-%m-%d)&forms=8-K" \
-  -H "User-Agent: RareDiseaseHedge-Research carterpry@gmail.com"
+  -H "User-Agent: RareDiseaseArb-Research carterpry@gmail.com"
 
 # Count total historical PRV APA 8-Ks (as of this report: 104 hits)
 curl -s "https://efts.sec.gov/LATEST/search-index?q=%22priority+review+voucher%22+%22asset+purchase+agreement%22&forms=8-K&_source=false&size=0" \
-  -H "User-Agent: RareDiseaseHedge-Research carterpry@gmail.com" | python3 -c "import json,sys; d=json.load(sys.stdin); print('Total hits:', d['hits']['total']['value'])"
+  -H "User-Agent: RareDiseaseArb-Research carterpry@gmail.com" | python3 -c "import json,sys; d=json.load(sys.stdin); print('Total hits:', d['hits']['total']['value'])"
 ```
 
 **Phrases sponsors actually use in filings** (verified from primary source review of 33 transactions):
@@ -254,7 +254,7 @@ A significant monitoring gap: If a transaction is below the HSR threshold (appro
 **Mitigation:** Supplement 8-K monitoring with full-text search of 10-Qs and 10-Ks quarterly:
 ```bash
 curl -s "https://efts.sec.gov/LATEST/search-index?q=%22priority+review+voucher%22+%22gain+on+sale%22&forms=10-Q,10-K" \
-  -H "User-Agent: RareDiseaseHedge-Research carterpry@gmail.com"
+  -H "User-Agent: RareDiseaseArb-Research carterpry@gmail.com"
 ```
 
 ---

@@ -109,7 +109,7 @@ th{{background:var(--paper);font-family:IBM Plex Mono,monospace;font-size:12px}}
 blockquote{{border-left:3px solid var(--sky);margin:14px 0;padding:6px 16px;color:var(--slate);background:var(--paper)}}
 ul{{padding-left:22px}} li{{margin:4px 0}} p{{margin:12px 0}}
 </style></head><body>
-<div class="bar"><div class="wrap"><span class="brand">rarediseasehedge</span>
+<div class="bar"><div class="wrap"><span class="brand">RareDiseaseArb</span>
 <a href="./">← Almanac</a><a href="candidates.html">Candidates</a><a href="list/">Card list</a><a href="funnel.html">Funnel</a><a href="audit.html">Audit</a></div></div>
 <main class="wrap">{body}</main></body></html>"""
 
@@ -198,7 +198,7 @@ def candidates_page(bio):
             "</tr>")
     n = len(rows)
     body = (f"<h1>{n} candidates</h1>"
-            f"<p>Every drug in the RareDiseaseHedge \u201cFunnel A\u201d screen: a real marketing "
+            f"<p>Every drug in the RareDiseaseArb \u201cFunnel A\u201d screen: a real marketing "
             f"authorisation from a foreign regulator (EMA, EEA national, Health Canada, Swissmedic, PMDA) "
             f"whose active moiety has <strong>never been approved in the United States</strong> \u2014 a "
             f"first screen for the prior-approval requirement under FD&amp;C Act \u00a7529. Other voucher "
@@ -216,7 +216,7 @@ def candidates_page(bio):
 
 def llms_txt(bio):
     h = bio.get("headline", {})
-    return f"""# RareDiseaseHedge \u2014 State of Bio 2026
+    return f"""# RareDiseaseArb \u2014 State of Bio 2026
 
 > A screen of drugs approved by a foreign regulator (EMA, EEA national registers via
 > the EMA Article 57 database, Health Canada, Swissmedic, PMDA) whose active moiety has
@@ -247,7 +247,7 @@ Generated: {bio.get("generated", "")}
 - [Raw pipeline output, JSON]({BASE_URL}/data/summary.json): everything above, machine-readable
 
 ## Notes
-- Charts labelled "RDH pipeline" and "Filings & seller disclosures" use real data; charts labelled "Illustrative" (disease areas, modalities) are design placeholders.
+- Charts labelled "RareDiseaseArb pipeline" and "Filings & seller disclosures" use real data; charts labelled "Illustrative" (disease areas, modalities) are design placeholders.
 - Nothing on this site is investment, legal, business or tax advice.
 """
 
@@ -285,7 +285,7 @@ def llms_full_txt(bio):
     return "\n".join(parts) + "\n"
 
 
-ROBOTS_TXT = """# RareDiseaseHedge — crawlers, search engines and AI assistants are welcome.
+ROBOTS_TXT = """# RareDiseaseArb — crawlers, search engines and AI assistants are welcome.
 # This site exists to be read; please index it and cite it.
 User-agent: *
 Allow: /
@@ -391,7 +391,7 @@ def main():
 
     files = sum(len(fs) for _, _, fs in os.walk(SITE))
     print(f"built {SITE} ({files} files) — deploy with:")
-    print("  npx wrangler pages deploy pipeline/report/_site --project-name=rarediseasehedge")
+    print("  npx wrangler pages deploy pipeline/report/_site --project-name=rarediseasearb")
 
 
 if __name__ == "__main__":

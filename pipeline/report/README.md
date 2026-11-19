@@ -1,6 +1,6 @@
 # State of Bio 2026 — the almanac report
 
-A magazine-style, D3-driven presentation of the RareDiseaseHedge "Funnel A"
+A magazine-style, D3-driven presentation of the RareDiseaseArb "Funnel A"
 model. The visual design (hero scroll-dissolve, ticker, tabbed stacked bars,
 sunburst, marimekko, world map) is adapted from a data-almanac
 template; the content is this project's rare-disease Priority Review Voucher

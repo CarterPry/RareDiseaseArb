@@ -18,7 +18,7 @@ import os, re, sys, ssl, zipfile, urllib.request, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW = os.path.join(HERE, "data", "raw")
-UA = "RareDiseaseHedge/1.0 (research; carterpry@gmail.com)"
+UA = "RareDiseaseArb/1.0 (research; carterpry@gmail.com)"
 
 # name -> (url, local filename, kind)   kind in {zip, xlsx, bin}
 #

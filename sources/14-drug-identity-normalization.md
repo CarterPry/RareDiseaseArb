@@ -6,7 +6,7 @@
 
 # Drug Identity Normalization — The Join Layer
 
-**Source document 14 of the RareDiseaseHedge source map.**
+**Source document 14 of the RareDiseaseArb source map.**
 **Research date: 2026-08-05 (original agent); supplemented 2026-08-06 (recovery).**
 
 Without a consistent cross-system drug identity layer you cannot diff a Japanese NHI listing against

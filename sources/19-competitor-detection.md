@@ -27,7 +27,7 @@ This means the detection surface is:
 Base URL: `https://efts.sec.gov/LATEST/search-index`  
 No authentication required. **User-Agent is mandatory** — SEC policy requires identifying your organization and contact email. A generic browser string works intermittently but triggers bot-blocking; a descriptive string (`CompanyName contact@email.com`) works reliably.  
 Rate limit: ≤10 req/sec per IP. Returns JSON with `hits.total.value` and per-hit `_source` containing `display_names`, `file_date`, `root_forms`.  
-VERIFIED: HTTP 200 confirmed with User-Agent `RareDiseaseHedge-Research carterpry@gmail.com` (2026-08-06).
+VERIFIED: HTTP 200 confirmed with the project research User-Agent (2026-08-06).
 
 ### Runnable Queries
 
@@ -86,7 +86,7 @@ https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=8-K&dateb=&owner
 ```
 VERIFIED: returns valid Atom XML, updated in near-real-time.  
 User-Agent requirement: must include company name + contact email, e.g.:  
-`User-Agent: RareDiseaseHedge-Research carterpry@gmail.com`
+`User-Agent: RareDiseaseArb-Research carterpry@gmail.com`
 
 **Daily index files** (machine-readable, updated each business day):  
 - Current quarter: `https://www.sec.gov/Archives/edgar/full-index/2026/QTR3/`
@@ -533,4 +533,4 @@ When any Tier 1/2 alert fires on a new company:
 
 ---
 
-*Source file: `/Users/carte/Downloads/RareDiseaseHedge/sources/19-competitor-detection.md`*
+*Source file: `sources/19-competitor-detection.md`*

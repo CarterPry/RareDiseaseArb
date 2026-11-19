@@ -276,6 +276,6 @@ Initiative page: `https://www.who.int/initiatives/who-listed-authority-reg-autho
 
 **⚠️ cdn.who.int `?sfvrsn=` cache-buster tokens change when WHO republishes a file.** Resolve them by scraping the parent page rather than hard-coding; the bare path without `?sfvrsn` generally still resolves (verified on the ML3/ML4 PDF).
 
-**Nothing was written to disk in the project directory.** Working files (downloaded PDFs/CSVs/XLSX used for verification) are in `/private/tmp/claude-501/-Users-carte-Downloads-RareDiseaseHedge/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/scratchpad`.
+**Nothing was written to disk in the project directory.** Working files (downloaded PDFs/CSVs/XLSX used for verification) were recorded at the glob `/private/tmp/claude-501/-Users-carte-Downloads-*/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/scratchpad`.
 
 **One caveat on sourcing:** the WHO ML3/ML4 and WLA figures above were read directly out of the official WHO PDFs via `pdftotext`, not from secondary reporting. The "36 WLAs / 34 countries" headline count comes from a Health Policy Watch article; the PDF itself does not state a total, so treat that number as journalist-derived while the per-authority rows are primary.

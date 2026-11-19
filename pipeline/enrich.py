@@ -30,7 +30,7 @@ OUT = os.path.join(HERE, "data", "out")
 SUMMARY = os.path.join(OUT, "summary.json")
 CACHE_DIR = os.path.join(HERE, "data", "cache")
 CACHE = os.path.join(CACHE_DIR, "enrich.json")
-UA = "RareDiseaseHedge/1.0 (research; carterpry@gmail.com)"
+UA = "RareDiseaseArb/1.0 (research; carterpry@gmail.com)"
 CTX = ssl.create_default_context()
 
 def get(url, headers=None, timeout=25):

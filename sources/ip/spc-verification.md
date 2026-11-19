@@ -174,4 +174,4 @@ Use the **consolidated** view for 469/2009 — the base CELEX text predates the 
 5. **Do NOT model a unitary SPC or EUIPO central examination** — still only a proposal, stuck awaiting Council first reading.
 6. **Always add the Art. 13(3) +6 months** where a paediatric extension event appears, and cap base SPC term at 5 years per Art. 13(2).
 
-**Scratch files** (delete at will): `/private/tmp/claude-501/-Users-carte-Downloads-RareDiseaseHedge/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/scratchpad/{inpadoc.pdf,inpadoc.txt,ops.pdf,ops.txt,frs.pdf}`. No files written to the project.
+**Historical scratch files** (path contains a glob): `/private/tmp/claude-501/-Users-carte-Downloads-*/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/scratchpad/{inpadoc.pdf,inpadoc.txt,ops.pdf,ops.txt,frs.pdf}`. No files written to the project.

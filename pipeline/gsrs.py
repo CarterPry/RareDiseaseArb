@@ -38,7 +38,7 @@ from moiety import is_counterion_substance
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE_PATH = os.path.join(HERE, "data", "cache", "gsrs.json")
 BASE = "https://gsrs.ncats.nih.gov/api/v1"
-UA = "RareDiseaseHedge/1.0 (research; carterpry@gmail.com)"
+UA = "RareDiseaseArb/1.0 (research; carterpry@gmail.com)"
 CTX = ssl.create_default_context()
 THROTTLE_S = 0.15
 RETRIES = 3

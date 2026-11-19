@@ -22,7 +22,7 @@ permissions:
 
 # Never let a manual dispatch overlap the scheduled run: both would push.
 concurrency:
-  group: rdh-refresh
+  group: rda-refresh
   cancel-in-progress: false
 
 jobs:
@@ -51,7 +51,7 @@ jobs:
         run: python pipeline/test_data_integrity.py
       - name: commit refreshed outputs
         run: |
-          git config user.name  "rdh-refresh-bot"
+          git config user.name  "rda-refresh-bot"
           git config user.email "actions@users.noreply.github.com"
           git add pipeline/data/out pipeline/data/cache pipeline/ui/index.html pipeline/report/data.js
           if git diff --cached --quiet; then

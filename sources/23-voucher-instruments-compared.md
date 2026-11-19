@@ -1,7 +1,7 @@
 # The Four FDA Voucher Instruments Compared
 
 **Prepared:** 2026-08-05  
-**Audience:** RareDiseaseHedge — drug repurposing / PRV monetization strategy  
+**Audience:** RareDiseaseArb — drug repurposing / PRV monetization strategy
 **Purpose:** Establish which instruments are genuinely monetizable and how each differs legally, procedurally, and commercially
 
 ---
@@ -298,7 +298,7 @@ FDA claims 30–60 day review turnaround for CNPV recipients, versus the standar
 
 **Monetizable (resale value exists):**
 
-1. **RPD PRV** — transferable, Federal Register-published, actively trading $150–200M (2025–2026). This is the primary instrument for RareDiseaseHedge's monetization thesis. The 2026-06-12 Rocket Pharmaceuticals closing at $180M (BusinessWire, VERIFIED) and Jazz's $200M Jan 2026 sale (Fierce Pharma, VERIFIED) confirm the current market. Scarcity premium is accruing as the 2029 sunset approaches.
+1. **RPD PRV** — transferable, Federal Register-published, actively trading $150–200M (2025–2026). This is the primary instrument for RareDiseaseArb's monetization thesis. The 2026-06-12 Rocket Pharmaceuticals closing at $180M (BusinessWire, VERIFIED) and Jazz's $200M Jan 2026 sale (Fierce Pharma, VERIFIED) confirm the current market. Scarcity premium is accruing as the 2029 sunset approaches.
 
 2. **TD PRV** — transferable, no sunset, actively trading at comparable prices. Relevant if a qualifying neglected tropical disease program is developed. Note the looser "active ingredient" (not "active moiety") test and the absence of Federal Register issuance notices.
 

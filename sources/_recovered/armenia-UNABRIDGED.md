@@ -455,4 +455,4 @@ RA Law "On Medicines" ՀՕ-/HO- number                                     NOT C
 8. The **named-patient / special-permission import** procedure under Decision N 202-N.
 9. A copy of **Government Decree N 172-A of 23.02.2017** (its webpage is empty).
 
-**Note:** I did not create any files. The scratchpad working copies of the PDFs and extracts remain at `/private/tmp/claude-501/-Users-carte-Downloads-RareDiseaseHedge/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/scratchpad/` if you want the source documents.
+**Note:** I did not create any files. The scratchpad working copies of the PDFs and extracts were recorded at the glob `/private/tmp/claude-501/-Users-carte-Downloads-*/fd64561f-7c90-41a2-95cf-b4a133a8fe0f/scratchpad/` if you want the source documents.
