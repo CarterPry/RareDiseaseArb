@@ -76908,5 +76908,56 @@
    ]
   ],
   "name": "Algeldrate"
+ },
+ "LB5DJT9FIW": {
+  "ok": true,
+  "forward": [
+   [
+    "PARENT->ACTIVE CONSTITUENT ALWAYS PRESENT",
+    "RUU8G67GQM",
+    "ESCIN"
+   ],
+   [
+    "PARENT->CONSTITUENT ALWAYS PRESENT",
+    "3C18L6RJAZ",
+    "HORSE CHESTNUT"
+   ]
+  ],
+  "reverse": [
+   [
+    "ACTIVE CONSTITUENT ALWAYS PRESENT->PARENT",
+    "RUU8G67GQM",
+    "ESCIN"
+   ],
+   [
+    "CONSTITUENT ALWAYS PRESENT->PARENT",
+    "3C18L6RJAZ",
+    "HORSE CHESTNUT"
+   ]
+  ],
+  "name": ".ALPHA.-ESCIN"
+ },
+ "P2AWN9VSQ6": {
+  "ok": true,
+  "forward": [
+   [
+    "ACTIVE MOIETY",
+    "69G8BD63PP",
+    "Bortezomib"
+   ],
+   [
+    "METABOLITE ACTIVE->PRODRUG",
+    "69G8BD63PP",
+    "Bortezomib"
+   ]
+  ],
+  "reverse": [
+   [
+    "PRODRUG->METABOLITE ACTIVE",
+    "69G8BD63PP",
+    "Bortezomib"
+   ]
+  ],
+  "name": "BORTEZOMIB D-MANNITOL"
  }
 }

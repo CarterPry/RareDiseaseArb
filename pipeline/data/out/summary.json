@@ -1,43 +1,43 @@
 {
- "generated": "2026-11-01",
- "snapshot": "UNII 4Aug2026 \u00b7 Drugs@FDA 01 Nov 2026 \u00b7 Orange Book 01 Nov 2026 \u00b7 EMA 01 Nov 2026 \u00b7 Health Canada 01 Nov 2026 \u00b7 Swissmedic 01 Nov 2026 \u00b7 PMDA 01 Nov 2026 \u00b7 GSRS relationship graph",
+ "generated": "2026-11-19",
+ "snapshot": "UNII 4Aug2026 \u00b7 Drugs@FDA 19 Nov 2026 \u00b7 Orange Book 19 Nov 2026 \u00b7 EMA 19 Nov 2026 \u00b7 Health Canada 19 Nov 2026 \u00b7 Swissmedic 19 Nov 2026 \u00b7 PMDA 19 Nov 2026 \u00b7 GSRS relationship graph",
  "funnel": {
-  "foreign_rows": 18115,
-  "resolved": 6507,
-  "unmatched": 11608,
-  "biologic_or_mixture": 420,
-  "in_us": 2030,
-  "in_us_string": 1882,
+  "foreign_rows": 18135,
+  "resolved": 6522,
+  "unmatched": 11613,
+  "biologic_or_mixture": 423,
+  "in_us": 2031,
+  "in_us_string": 1883,
   "in_us_gsrs": 148,
   "review": 9,
-  "candidate_small_mol": 639,
-  "needs_translit_unmatched": 232,
-  "named_drug": 341,
-  "unnamed": 267,
-  "no_authorisation_in_loaded_registers": 31,
+  "candidate_small_mol": 640,
+  "needs_translit_unmatched": 244,
+  "named_drug": 342,
+  "unnamed": 269,
+  "no_authorisation_in_loaded_registers": 29,
   "unresolved_by_source": {
-   "EMA": 375,
-   "EU national (Art57)": 7908,
-   "Health Canada": 221,
-   "PMDA-JP": 232,
-   "Swissmedic": 2872
+   "EMA": 374,
+   "EU national (Art57)": 7900,
+   "Health Canada": 220,
+   "PMDA-JP": 244,
+   "Swissmedic": 2875
   },
   "rows_by_source": {
-   "EMA": 2310,
-   "EU national (Art57)": 11894,
+   "EMA": 2318,
+   "EU national (Art57)": 11891,
    "Health Canada": 702,
-   "PMDA-JP": 234,
-   "Swissmedic": 2975
+   "PMDA-JP": 246,
+   "Swissmedic": 2978
   }
  },
- "us_ingredient_rows": 189300,
+ "us_ingredient_rows": 189607,
  "counts": {
-  "named": 341,
-  "unnamed": 267,
+  "named": 342,
+  "unnamed": 269,
   "review": 9,
-  "dossier_only": 31,
+  "dossier_only": 29,
   "orphan": 2,
-  "inn": 337,
+  "inn": 338,
   "multi_regulator": 23
  },
  "candidates": [
@@ -2180,7 +2180,7 @@
    ],
    "area": "Arthritis, Rheumatoid",
    "atc": "L04AF04",
-   "indication": "Rheumatoid arthritis Jyseleca is indicated for the treatment of moderate to severe active rheumatoid arthritis in adult patients who have responded inadequately to, or who are intolerant to one or more disease modifying anti rheumatic drugs (DMARDs). Jyseleca may be used as monotherapy or in combination with methotrexate (MTX). Ulcerative colitis Jyseleca is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis who have had an inadequate response with, lost response to, or were intolerant to either conventional therapy or a biologic agent.",
+   "indication": "Rheumatoid arthritisJyseleca is indicated for the treatment of moderate to severe active rheumatoid arthritis in adult patients who have responded inadequately to, or who are intolerant to one or more disease modifying anti rheumatic drugs (DMARDs). Jyseleca may be used as monotherapy or in combination with methotrexate (MTX). Ulcerative colitisJyseleca is indicated for the treatment of adult patients with moderately to severely active ulcerative colitis who have had an inadequate response with, lost response to, or were intolerant to either conventional therapy or a biologic agent. Axial spondyloarthritis&nbsp;&nbsp; Non-radiographic axial spondyloarthritis (nr-axSpA)&nbsp;&nbsp;Jyseleca is indicated for the treatment of active non-radiographic axial spondyloarthritis in adult patients with objective signs of inflammation as indicated by elevated C-reactive protein (CRP) and/or magnetic resonance imaging (MRI), who have responded inadequately to nonsteroidal anti-inflammatory drugs (NSAIDs).&nbsp; Ankylosing spondylitis (AS, radiographic axial spondyloarthritis [r-axSpA])&nbsp;&nbsp;Jyseleca is indicated for the treatment of active ankylosing spondylitis (radiographic axial spondyloarthritis) in adult patients who have responded inadequately to conventional therapy.",
    "approved": "24/09/2020",
    "flags": [
     "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
@@ -2824,6 +2824,7 @@
    "orphan": false,
    "tier": "moiety-base",
    "examples": [
+    "Obicetrapib",
     "Obicetrapib Hemicalcium",
     "obicetrapib hemicalcium"
    ],
@@ -6746,6 +6747,175 @@
    }
   },
   {
+   "unii": "88TWF8015Y",
+   "name": "CARBETOCIN",
+   "moiety": "CARBETOCIN",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "Carbetocin"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 24,
+   "countries": [
+    "Austria",
+    "Belgium",
+    "Bulgaria",
+    "Croatia",
+    "Czech Republic",
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "France",
+    "Germany",
+    "Greece",
+    "Ireland",
+    "Italy",
+    "Latvia",
+    "Lithuania",
+    "Luxembourg",
+    "Netherlands",
+    "Norway",
+    "Poland",
+    "Portugal",
+    "Slovakia",
+    "Spain",
+    "Sweden",
+    "United Kingdom (Northern Ireland)"
+   ],
+   "pubmed": 2,
+   "trials": 103,
+   "us_orphan": "unknown",
+   "chembl": [
+    {
+     "disease": "Postpartum Hemorrhage",
+     "phase": 3.0
+    },
+    {
+     "disease": "Prader-Willi Syndrome",
+     "phase": 3.0
+    },
+    {
+     "disease": "Uterine Inertia",
+     "phase": 1.0
+    },
+    {
+     "disease": "Leiomyoma",
+     "phase": 1.0
+    }
+   ],
+   "disease_terms": "Postpartum Hemorrhage; Prader-Willi Syndrome",
+   "orpha": null,
+   "eu_orphan_designations": [
+    {
+     "use": "Treatment of Prader-Willi syndrome",
+     "status": "Withdrawn",
+     "number": "EU/3/12/975"
+    }
+   ],
+   "eu_orphan_designation": {
+    "use": "Treatment of Prader-Willi syndrome",
+    "status": "Withdrawn",
+    "number": "EU/3/12/975"
+   },
+   "eligibility": {
+    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
+    "criteria": [
+     {
+      "key": "no_prior_us_active_moiety",
+      "status": "PASS",
+      "decidability": "machine",
+      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
+      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
+     },
+     {
+      "key": "rare_under_200k",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(3)(B)",
+      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
+     },
+     {
+      "key": "primarily_pediatric",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
+     },
+     {
+      "key": "serious_or_life_threatening",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "seriousness not assessed"
+     },
+     {
+      "key": "qualifies_for_priority_review",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(4)(C)",
+      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
+     },
+     {
+      "key": "human_evidence_exists",
+      "status": "PASS",
+      "decidability": "data",
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
+     },
+     {
+      "key": "filed_as_505b1",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(B)(i)(II)",
+      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
+     },
+     {
+      "key": "relies_on_pediatric_data",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(D)",
+      "note": "sponsor's filing decision, not a drug property"
+     },
+     {
+      "key": "no_adult_indication_sought",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(E)",
+      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
+     },
+     {
+      "key": "voucher_awardable_before_sunset",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(b)(5)",
+      "note": "no projected approval date supplied"
+     },
+     {
+      "key": "approved_after_30_sep_2016",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(4)(F)",
+      "note": "no projected approval date supplied"
+     }
+    ]
+   }
+  },
+  {
    "unii": "ZH516LNZ10",
    "name": "PIRACETAM",
    "moiety": "PIRACETAM",
@@ -6835,174 +7005,6 @@
    ],
    "disease_terms": "Attention Deficit Disorder with Hyperactivity",
    "orpha": null,
-   "eligibility": {
-    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
-    "criteria": [
-     {
-      "key": "no_prior_us_active_moiety",
-      "status": "PASS",
-      "decidability": "machine",
-      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
-      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
-     },
-     {
-      "key": "rare_under_200k",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(3)(B)",
-      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
-     },
-     {
-      "key": "primarily_pediatric",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
-     },
-     {
-      "key": "serious_or_life_threatening",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "seriousness not assessed"
-     },
-     {
-      "key": "qualifies_for_priority_review",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(4)(C)",
-      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
-     },
-     {
-      "key": "human_evidence_exists",
-      "status": "PASS",
-      "decidability": "data",
-      "citation": "evidence base for a 505(b)(1)",
-      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
-     },
-     {
-      "key": "filed_as_505b1",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(B)(i)(II)",
-      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
-     },
-     {
-      "key": "relies_on_pediatric_data",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(D)",
-      "note": "sponsor's filing decision, not a drug property"
-     },
-     {
-      "key": "no_adult_indication_sought",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(E)",
-      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
-     },
-     {
-      "key": "voucher_awardable_before_sunset",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(b)(5)",
-      "note": "no projected approval date supplied"
-     },
-     {
-      "key": "approved_after_30_sep_2016",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(4)(F)",
-      "note": "no projected approval date supplied"
-     }
-    ]
-   }
-  },
-  {
-   "unii": "88TWF8015Y",
-   "name": "CARBETOCIN",
-   "moiety": "CARBETOCIN",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EU national (Art57)"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "Carbetocin"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "foreign_status": "authorised",
-   "status_by_source": {
-    "EU national (Art57)": "authorised"
-   },
-   "n_countries": 23,
-   "countries": [
-    "Austria",
-    "Belgium",
-    "Bulgaria",
-    "Czech Republic",
-    "Denmark",
-    "Estonia",
-    "Finland",
-    "France",
-    "Germany",
-    "Greece",
-    "Ireland",
-    "Italy",
-    "Latvia",
-    "Lithuania",
-    "Luxembourg",
-    "Netherlands",
-    "Norway",
-    "Poland",
-    "Portugal",
-    "Slovakia",
-    "Spain",
-    "Sweden",
-    "United Kingdom (Northern Ireland)"
-   ],
-   "pubmed": 2,
-   "trials": 103,
-   "us_orphan": "unknown",
-   "chembl": [
-    {
-     "disease": "Postpartum Hemorrhage",
-     "phase": 3.0
-    },
-    {
-     "disease": "Prader-Willi Syndrome",
-     "phase": 3.0
-    },
-    {
-     "disease": "Uterine Inertia",
-     "phase": 1.0
-    },
-    {
-     "disease": "Leiomyoma",
-     "phase": 1.0
-    }
-   ],
-   "disease_terms": "Postpartum Hemorrhage; Prader-Willi Syndrome",
-   "orpha": null,
-   "eu_orphan_designations": [
-    {
-     "use": "Treatment of Prader-Willi syndrome",
-     "status": "Withdrawn",
-     "number": "EU/3/12/975"
-    }
-   ],
-   "eu_orphan_designation": {
-    "use": "Treatment of Prader-Willi syndrome",
-    "status": "Withdrawn",
-    "number": "EU/3/12/975"
-   },
    "eligibility": {
     "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
     "criteria": [
@@ -14073,135 +14075,6 @@
    }
   },
   {
-   "unii": "0813BZ6866",
-   "name": "CLODRONIC ACID",
-   "moiety": "CLODRONATE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EU national (Art57)"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "Clodronate Disodium",
-    "Clodronate Disodium Tetrahydrate"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [
-    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
-   ],
-   "foreign_status": "authorised",
-   "status_by_source": {
-    "EU national (Art57)": "authorised"
-   },
-   "n_countries": 11,
-   "countries": [
-    "Austria",
-    "Cyprus",
-    "Czech Republic",
-    "France",
-    "Germany",
-    "Italy",
-    "Malta",
-    "Netherlands",
-    "Portugal",
-    "Romania",
-    "United Kingdom (Northern Ireland)"
-   ],
-   "pubmed": 20,
-   "trials": 17,
-   "us_orphan": "unknown",
-   "chembl": [],
-   "orpha": null,
-   "eligibility": {
-    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
-    "criteria": [
-     {
-      "key": "no_prior_us_active_moiety",
-      "status": "PASS",
-      "decidability": "machine",
-      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
-      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
-     },
-     {
-      "key": "rare_under_200k",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(3)(B)",
-      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
-     },
-     {
-      "key": "primarily_pediatric",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
-     },
-     {
-      "key": "serious_or_life_threatening",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "seriousness not assessed"
-     },
-     {
-      "key": "qualifies_for_priority_review",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(4)(C)",
-      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
-     },
-     {
-      "key": "human_evidence_exists",
-      "status": "PASS",
-      "decidability": "data",
-      "citation": "evidence base for a 505(b)(1)",
-      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
-     },
-     {
-      "key": "filed_as_505b1",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(B)(i)(II)",
-      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
-     },
-     {
-      "key": "relies_on_pediatric_data",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(D)",
-      "note": "sponsor's filing decision, not a drug property"
-     },
-     {
-      "key": "no_adult_indication_sought",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(E)",
-      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
-     },
-     {
-      "key": "voucher_awardable_before_sunset",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(b)(5)",
-      "note": "no projected approval date supplied"
-     },
-     {
-      "key": "approved_after_30_sep_2016",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(4)(F)",
-      "note": "no projected approval date supplied"
-     }
-    ]
-   }
-  },
-  {
    "unii": "0C5DBZ19HV",
    "name": "CLOMETHIAZOLE",
    "moiety": "CLOMETHIAZOLE",
@@ -15079,6 +14952,134 @@
     }
    ],
    "disease_terms": "Cardiovascular Diseases",
+   "orpha": null,
+   "eligibility": {
+    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
+    "criteria": [
+     {
+      "key": "no_prior_us_active_moiety",
+      "status": "PASS",
+      "decidability": "machine",
+      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
+      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
+     },
+     {
+      "key": "rare_under_200k",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(3)(B)",
+      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
+     },
+     {
+      "key": "primarily_pediatric",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
+     },
+     {
+      "key": "serious_or_life_threatening",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "seriousness not assessed"
+     },
+     {
+      "key": "qualifies_for_priority_review",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(4)(C)",
+      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
+     },
+     {
+      "key": "human_evidence_exists",
+      "status": "PASS",
+      "decidability": "data",
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
+     },
+     {
+      "key": "filed_as_505b1",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(B)(i)(II)",
+      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
+     },
+     {
+      "key": "relies_on_pediatric_data",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(D)",
+      "note": "sponsor's filing decision, not a drug property"
+     },
+     {
+      "key": "no_adult_indication_sought",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(E)",
+      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
+     },
+     {
+      "key": "voucher_awardable_before_sunset",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(b)(5)",
+      "note": "no projected approval date supplied"
+     },
+     {
+      "key": "approved_after_30_sep_2016",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(4)(F)",
+      "note": "no projected approval date supplied"
+     }
+    ]
+   }
+  },
+  {
+   "unii": "0813BZ6866",
+   "name": "CLODRONIC ACID",
+   "moiety": "CLODRONATE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "Clodronate Disodium",
+    "Clodronate Disodium Tetrahydrate"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 10,
+   "countries": [
+    "Austria",
+    "Cyprus",
+    "Czech Republic",
+    "France",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Portugal",
+    "Romania",
+    "United Kingdom (Northern Ireland)"
+   ],
+   "pubmed": 20,
+   "trials": 17,
+   "us_orphan": "unknown",
+   "chembl": [],
    "orpha": null,
    "eligibility": {
     "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
@@ -20839,132 +20840,6 @@
    }
   },
   {
-   "unii": "F8252JGO9S",
-   "name": "CIPROFIBRATE",
-   "moiety": "CIPROFIBRATE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EU national (Art57)"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "Ciprofibrate"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "foreign_status": "authorised",
-   "status_by_source": {
-    "EU national (Art57)": "authorised"
-   },
-   "n_countries": 5,
-   "countries": [
-    "Bulgaria",
-    "France",
-    "Netherlands",
-    "Poland",
-    "United Kingdom (Northern Ireland)"
-   ],
-   "pubmed": 1,
-   "trials": 4,
-   "us_orphan": "unknown",
-   "chembl": [
-    {
-     "disease": "Cardiovascular Diseases",
-     "phase": 4.0
-    }
-   ],
-   "disease_terms": "Cardiovascular Diseases",
-   "orpha": null,
-   "eligibility": {
-    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
-    "criteria": [
-     {
-      "key": "no_prior_us_active_moiety",
-      "status": "PASS",
-      "decidability": "machine",
-      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
-      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
-     },
-     {
-      "key": "rare_under_200k",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(3)(B)",
-      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
-     },
-     {
-      "key": "primarily_pediatric",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
-     },
-     {
-      "key": "serious_or_life_threatening",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "seriousness not assessed"
-     },
-     {
-      "key": "qualifies_for_priority_review",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(4)(C)",
-      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
-     },
-     {
-      "key": "human_evidence_exists",
-      "status": "PASS",
-      "decidability": "data",
-      "citation": "evidence base for a 505(b)(1)",
-      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
-     },
-     {
-      "key": "filed_as_505b1",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(B)(i)(II)",
-      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
-     },
-     {
-      "key": "relies_on_pediatric_data",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(D)",
-      "note": "sponsor's filing decision, not a drug property"
-     },
-     {
-      "key": "no_adult_indication_sought",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(E)",
-      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
-     },
-     {
-      "key": "voucher_awardable_before_sunset",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(b)(5)",
-      "note": "no projected approval date supplied"
-     },
-     {
-      "key": "approved_after_30_sep_2016",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(4)(F)",
-      "note": "no projected approval date supplied"
-     }
-    ]
-   }
-  },
-  {
    "unii": "C7Z4ITI7L7",
    "name": "ENOXIMONE",
    "moiety": "ENOXIMONE",
@@ -23271,6 +23146,131 @@
     }
    ],
    "disease_terms": "Dyspepsia; Digestive System Diseases",
+   "orpha": null,
+   "eligibility": {
+    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
+    "criteria": [
+     {
+      "key": "no_prior_us_active_moiety",
+      "status": "PASS",
+      "decidability": "machine",
+      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
+      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
+     },
+     {
+      "key": "rare_under_200k",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(3)(B)",
+      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
+     },
+     {
+      "key": "primarily_pediatric",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
+     },
+     {
+      "key": "serious_or_life_threatening",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "seriousness not assessed"
+     },
+     {
+      "key": "qualifies_for_priority_review",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(4)(C)",
+      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
+     },
+     {
+      "key": "human_evidence_exists",
+      "status": "PASS",
+      "decidability": "data",
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
+     },
+     {
+      "key": "filed_as_505b1",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(B)(i)(II)",
+      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
+     },
+     {
+      "key": "relies_on_pediatric_data",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(D)",
+      "note": "sponsor's filing decision, not a drug property"
+     },
+     {
+      "key": "no_adult_indication_sought",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(E)",
+      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
+     },
+     {
+      "key": "voucher_awardable_before_sunset",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(b)(5)",
+      "note": "no projected approval date supplied"
+     },
+     {
+      "key": "approved_after_30_sep_2016",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(4)(F)",
+      "note": "no projected approval date supplied"
+     }
+    ]
+   }
+  },
+  {
+   "unii": "F8252JGO9S",
+   "name": "CIPROFIBRATE",
+   "moiety": "CIPROFIBRATE",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "Ciprofibrate"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 4,
+   "countries": [
+    "France",
+    "Netherlands",
+    "Poland",
+    "United Kingdom (Northern Ireland)"
+   ],
+   "pubmed": 1,
+   "trials": 4,
+   "us_orphan": "unknown",
+   "chembl": [
+    {
+     "disease": "Cardiovascular Diseases",
+     "phase": 4.0
+    }
+   ],
+   "disease_terms": "Cardiovascular Diseases",
    "orpha": null,
    "eligibility": {
     "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
@@ -37937,140 +37937,6 @@
    }
   },
   {
-   "unii": "GQ7JL9P5I2",
-   "name": "FOTEMUSTINE",
-   "moiety": "FOTEMUSTINE",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EU national (Art57)"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "Fotemustine"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "foreign_status": "authorised",
-   "status_by_source": {
-    "EU national (Art57)": "authorised"
-   },
-   "n_countries": 1,
-   "countries": [
-    "France"
-   ],
-   "pubmed": 4,
-   "trials": 14,
-   "us_orphan": "unknown",
-   "chembl": [
-    {
-     "disease": "Neoplasms",
-     "phase": 3.0
-    },
-    {
-     "disease": "Melanoma",
-     "phase": 3.0
-    },
-    {
-     "disease": "Uveal Melanoma",
-     "phase": 3.0
-    },
-    {
-     "disease": "Glioblastoma",
-     "phase": 2.0
-    }
-   ],
-   "disease_terms": "Neoplasms; Melanoma; Uveal Melanoma",
-   "orpha": null,
-   "eligibility": {
-    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
-    "criteria": [
-     {
-      "key": "no_prior_us_active_moiety",
-      "status": "PASS",
-      "decidability": "machine",
-      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
-      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
-     },
-     {
-      "key": "rare_under_200k",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(3)(B)",
-      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
-     },
-     {
-      "key": "primarily_pediatric",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
-     },
-     {
-      "key": "serious_or_life_threatening",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "seriousness not assessed"
-     },
-     {
-      "key": "qualifies_for_priority_review",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(4)(C)",
-      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
-     },
-     {
-      "key": "human_evidence_exists",
-      "status": "PASS",
-      "decidability": "data",
-      "citation": "evidence base for a 505(b)(1)",
-      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
-     },
-     {
-      "key": "filed_as_505b1",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(B)(i)(II)",
-      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
-     },
-     {
-      "key": "relies_on_pediatric_data",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(D)",
-      "note": "sponsor's filing decision, not a drug property"
-     },
-     {
-      "key": "no_adult_indication_sought",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(E)",
-      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
-     },
-     {
-      "key": "voucher_awardable_before_sunset",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(b)(5)",
-      "note": "no projected approval date supplied"
-     },
-     {
-      "key": "approved_after_30_sep_2016",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(4)(F)",
-      "note": "no projected approval date supplied"
-     }
-    ]
-   }
-  },
-  {
    "unii": "4BOC774388",
    "name": "FRAMYCETIN",
    "moiety": "FRAMYCETIN",
@@ -44876,13 +44742,14 @@
     "EMA"
    ],
    "orphan": false,
-   "tier": "moiety-base",
+   "tier": "exact-moiety",
    "examples": [
-    "Aumolertinib mesilate"
+    "Aumolertinib mesilate",
+    "aumolertinib"
    ],
    "area": "Carcinoma, Non-Small-Cell Lung",
-   "atc": "L01EB",
-   "indication": "Aumseqa as monotherapy is indicated for:- the first-line treatment of adult patients with advanced non-small cell lung cancer (NSCLC)whose tumours have EGFR exon 19 deletions or exon 21 (L858R) substitution mutations (forbiomarker-based patient selection, see section 4.2).- the treatment of adult patients with advanced EGFR T790M mutation-positive NSCLC (forbiomarker-based patient selection, see section 4.2)",
+   "atc": "L01EB11",
+   "indication": "Treatment of non-small cell lung cancer in adults.",
    "approved": "12/02/2026",
    "flags": [],
    "foreign_status": "previously_authorised",
@@ -45513,6 +45380,137 @@
    }
   },
   {
+   "unii": "N0JWC7RO00",
+   "name": "POVORCITINIB",
+   "moiety": "POVORCITINIB",
+   "inn": true,
+   "usan": true,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "povorcitinib phosphate"
+   ],
+   "area": "Hidradenitis Suppurativa",
+   "atc": "",
+   "indication": "Povofortay is indicated for the treatment of active moderate to severe hidradenitis suppurativa (acne inversa) in adults who have responded inadequately to, or who are intolerant or contraindicated to an anti-TNF therapy.",
+   "approved": "12/11/2026",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
+   "n_countries": 0,
+   "countries": [],
+   "pubmed": 1,
+   "trials": 25,
+   "us_orphan": "unknown",
+   "chembl": [
+    {
+     "disease": "Vitiligo",
+     "phase": 3.0
+    },
+    {
+     "disease": "Hidradenitis Suppurativa",
+     "phase": 3.0
+    },
+    {
+     "disease": "Asthma",
+     "phase": 2.0
+    },
+    {
+     "disease": "Prurigo",
+     "phase": 1.0
+    }
+   ],
+   "orpha": null,
+   "eligibility": {
+    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
+    "criteria": [
+     {
+      "key": "no_prior_us_active_moiety",
+      "status": "PASS",
+      "decidability": "machine",
+      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
+      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
+     },
+     {
+      "key": "rare_under_200k",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(3)(B)",
+      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
+     },
+     {
+      "key": "primarily_pediatric",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
+     },
+     {
+      "key": "serious_or_life_threatening",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "seriousness not assessed"
+     },
+     {
+      "key": "qualifies_for_priority_review",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(4)(C)",
+      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
+     },
+     {
+      "key": "human_evidence_exists",
+      "status": "PASS",
+      "decidability": "data",
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
+     },
+     {
+      "key": "filed_as_505b1",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(B)(i)(II)",
+      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
+     },
+     {
+      "key": "relies_on_pediatric_data",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(D)",
+      "note": "sponsor's filing decision, not a drug property"
+     },
+     {
+      "key": "no_adult_indication_sought",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(E)",
+      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
+     },
+     {
+      "key": "voucher_awardable_before_sunset",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(b)(5)",
+      "note": "no projected approval date supplied"
+     },
+     {
+      "key": "approved_after_30_sep_2016",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(4)(F)",
+      "note": "no projected approval date supplied"
+     }
+    ]
+   }
+  },
+  {
    "unii": "RML78EN3XE",
    "name": "RIMONABANT",
    "moiety": "RIMONABANT",
@@ -45656,6 +45654,137 @@
       "decidability": "data",
       "citation": "evidence base for a 505(b)(1)",
       "note": "published evidence located; usable inside a full 505(b)(1), not as a 505(b)(2) bridge, since only 505(b)(1) filings earn the voucher"
+     },
+     {
+      "key": "filed_as_505b1",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(B)(i)(II)",
+      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
+     },
+     {
+      "key": "relies_on_pediatric_data",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(D)",
+      "note": "sponsor's filing decision, not a drug property"
+     },
+     {
+      "key": "no_adult_indication_sought",
+      "status": "HUMAN",
+      "decidability": "design",
+      "citation": "s.529(a)(4)(E)",
+      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
+     },
+     {
+      "key": "voucher_awardable_before_sunset",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(b)(5)",
+      "note": "no projected approval date supplied"
+     },
+     {
+      "key": "approved_after_30_sep_2016",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(4)(F)",
+      "note": "no projected approval date supplied"
+     }
+    ]
+   }
+  },
+  {
+   "unii": "MNZ4OP95CF",
+   "name": "SENAPARIB",
+   "moiety": "SENAPARIB",
+   "inn": true,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EMA"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "senaparib"
+   ],
+   "area": "Fallopian Tube Neoplasms;Peritoneal Neoplasms;Carcinoma, Ovarian Epithelial",
+   "atc": "L01XK07",
+   "indication": "Sepalna is indicated as monotherapy for the maintenance treatment of adult patients with advanced (FIGO Stages III and IV) epithelial high-grade ovarian, fallopian tube or primary peritoneal cancer who are in response (complete or partial) following completion of first-line platinum-based chemotherapy.",
+   "approved": "12/11/2026",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EMA": "authorised"
+   },
+   "n_countries": 0,
+   "countries": [],
+   "pubmed": 0,
+   "trials": 17,
+   "us_orphan": "unknown",
+   "chembl": [
+    {
+     "disease": "Ovarian Neoplasms",
+     "phase": 2.0
+    },
+    {
+     "disease": "Neoplasms",
+     "phase": 1.0
+    },
+    {
+     "disease": "Breast Neoplasms",
+     "phase": 1.0
+    },
+    {
+     "disease": "Prostatic Neoplasms, Castration-Resistant",
+     "phase": 1.0
+    }
+   ],
+   "orpha": null,
+   "eligibility": {
+    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
+    "criteria": [
+     {
+      "key": "no_prior_us_active_moiety",
+      "status": "PASS",
+      "decidability": "machine",
+      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
+      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
+     },
+     {
+      "key": "rare_under_200k",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "s.529(a)(3)(B)",
+      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
+     },
+     {
+      "key": "primarily_pediatric",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
+     },
+     {
+      "key": "serious_or_life_threatening",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(3)(A)",
+      "note": "seriousness not assessed"
+     },
+     {
+      "key": "qualifies_for_priority_review",
+      "status": "HUMAN",
+      "decidability": "judgment",
+      "citation": "s.529(a)(4)(C)",
+      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
+     },
+     {
+      "key": "human_evidence_exists",
+      "status": "UNKNOWN",
+      "decidability": "data",
+      "citation": "evidence base for a 505(b)(1)",
+      "note": "no published human evidence located"
      },
      {
       "key": "filed_as_505b1",
@@ -46253,12 +46382,13 @@
     "EU national (Art57)": "authorised",
     "Swissmedic": "authorised"
    },
-   "n_countries": 18,
+   "n_countries": 19,
    "countries": [
     "Austria",
     "Belgium",
     "Bulgaria",
     "Denmark",
+    "Estonia",
     "Finland",
     "Germany",
     "Greece",
@@ -46782,63 +46912,6 @@
    "orpha": null
   },
   {
-   "unii": "E1UOL152H7",
-   "name": "IRON",
-   "moiety": "IRON",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EU national (Art57)"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "Iron"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [
-    "US_NON_APPLICATION_MARKETING: sold in the US under ['DRUG FOR FURTHER PROCESSING', 'EXPORT ONLY', 'UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
-   ],
-   "foreign_status": "authorised",
-   "status_by_source": {
-    "EU national (Art57)": "authorised"
-   },
-   "n_countries": 26,
-   "countries": [
-    "Belgium",
-    "Bulgaria",
-    "Croatia",
-    "Czech Republic",
-    "Denmark",
-    "Estonia",
-    "France",
-    "Germany",
-    "Greece",
-    "Hungary",
-    "Ireland",
-    "Italy",
-    "Latvia",
-    "Lithuania",
-    "Luxembourg",
-    "Malta",
-    "Netherlands",
-    "Norway",
-    "Poland",
-    "Portugal",
-    "Romania",
-    "Slovakia",
-    "Slovenia",
-    "Spain",
-    "Sweden",
-    "United Kingdom (Northern Ireland)"
-   ],
-   "orpha": null
-  },
-  {
    "unii": "4109R0VM5R",
    "name": "SULPIRIDE, (R)-",
    "moiety": "SULPIRIDE",
@@ -47098,6 +47171,56 @@
    "orpha": null
   },
   {
+   "unii": "E1UOL152H7",
+   "name": "IRON",
+   "moiety": "IRON",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "Iron"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['DRUG FOR FURTHER PROCESSING', 'EXPORT ONLY', 'UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 19,
+   "countries": [
+    "Belgium",
+    "Bulgaria",
+    "Croatia",
+    "Denmark",
+    "Estonia",
+    "France",
+    "Germany",
+    "Greece",
+    "Ireland",
+    "Latvia",
+    "Lithuania",
+    "Luxembourg",
+    "Malta",
+    "Netherlands",
+    "Poland",
+    "Slovakia",
+    "Slovenia",
+    "Sweden",
+    "United Kingdom (Northern Ireland)"
+   ],
+   "orpha": null
+  },
+  {
    "unii": "934T64RMNJ",
    "name": "METAMIZOLE",
    "moiety": "METAMIZOLE",
@@ -47118,9 +47241,7 @@
    "atc": "",
    "indication": "",
    "approved": "",
-   "flags": [
-    "US_NON_APPLICATION_MARKETING: sold in the US under ['BULK INGREDIENT']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
-   ],
+   "flags": [],
    "foreign_status": "authorised",
    "status_by_source": {
     "EU national (Art57)": "authorised"
@@ -47508,6 +47629,48 @@
    "orpha": null
   },
   {
+   "unii": "GI96W46M5A",
+   "name": "MAGNESIUM OROTATE",
+   "moiety": "MAGNESIUM OROTATE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "Magnesium Orotate Dihydrate"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+   ],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 11,
+   "countries": [
+    "Austria",
+    "Bulgaria",
+    "Czech Republic",
+    "Estonia",
+    "Germany",
+    "Hungary",
+    "Latvia",
+    "Lithuania",
+    "Romania",
+    "Slovakia",
+    "Spain"
+   ],
+   "orpha": null
+  },
+  {
    "unii": "20VJ8H4MNI",
    "name": "NITRENDIPINE, (R)-",
    "moiety": "NITRENDIPINE",
@@ -47582,47 +47745,6 @@
     "Lithuania",
     "Netherlands",
     "Poland",
-    "Romania",
-    "Slovakia"
-   ],
-   "orpha": null
-  },
-  {
-   "unii": "GI96W46M5A",
-   "name": "MAGNESIUM OROTATE",
-   "moiety": "MAGNESIUM OROTATE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EU national (Art57)"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "Magnesium Orotate Dihydrate"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [
-    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
-   ],
-   "foreign_status": "authorised",
-   "status_by_source": {
-    "EU national (Art57)": "authorised"
-   },
-   "n_countries": 10,
-   "countries": [
-    "Austria",
-    "Bulgaria",
-    "Czech Republic",
-    "Estonia",
-    "Germany",
-    "Hungary",
-    "Latvia",
-    "Lithuania",
     "Romania",
     "Slovakia"
    ],
@@ -48519,41 +48641,6 @@
    "orpha": null
   },
   {
-   "unii": "M40WCZ5X76",
-   "name": "MANIDIPINE, (S)-",
-   "moiety": "MANIDIPINE",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EU national (Art57)"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "Manidipine",
-    "Manidipine Dihydrochloride"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "foreign_status": "authorised",
-   "status_by_source": {
-    "EU national (Art57)": "authorised"
-   },
-   "n_countries": 5,
-   "countries": [
-    "France",
-    "Greece",
-    "Italy",
-    "Portugal",
-    "Spain"
-   ],
-   "orpha": null
-  },
-  {
    "unii": "020IUV4N33",
    "name": "PHOSPHOCREATINE",
    "moiety": "PHOSPHOCREATINE",
@@ -48693,39 +48780,6 @@
    "orpha": null
   },
   {
-   "unii": "E96303N5PG",
-   "name": "BAMBUTEROL, (S)-",
-   "moiety": "BAMBUTEROL",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EU national (Art57)"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "Bambuterol Hydrochloride"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "foreign_status": "authorised",
-   "status_by_source": {
-    "EU national (Art57)": "authorised"
-   },
-   "n_countries": 4,
-   "countries": [
-    "Austria",
-    "France",
-    "Germany",
-    "United Kingdom (Northern Ireland)"
-   ],
-   "orpha": null
-  },
-  {
    "unii": "29VT07BGDA",
    "name": "CITRULLINE",
    "moiety": "CITRULLINE",
@@ -48857,6 +48911,73 @@
     "Finland",
     "Luxembourg",
     "Sweden"
+   ],
+   "orpha": null
+  },
+  {
+   "unii": "Y4F5ODM66L",
+   "name": "MAGNESIUM ASPARTATE DIHYDRATE",
+   "moiety": "",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "direct",
+   "examples": [
+    "Magnesium Aspartate Dihydrate"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 4,
+   "countries": [
+    "Austria",
+    "Germany",
+    "Greece",
+    "United Kingdom (Northern Ireland)"
+   ],
+   "orpha": null
+  },
+  {
+   "unii": "M40WCZ5X76",
+   "name": "MANIDIPINE, (S)-",
+   "moiety": "MANIDIPINE",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "Manidipine",
+    "Manidipine Dihydrochloride"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 4,
+   "countries": [
+    "France",
+    "Greece",
+    "Italy",
+    "Spain"
    ],
    "orpha": null
   },
@@ -49161,6 +49282,38 @@
    "orpha": null
   },
   {
+   "unii": "E96303N5PG",
+   "name": "BAMBUTEROL, (S)-",
+   "moiety": "BAMBUTEROL",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "moiety-base",
+   "examples": [
+    "Bambuterol Hydrochloride"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 3,
+   "countries": [
+    "France",
+    "Germany",
+    "United Kingdom (Northern Ireland)"
+   ],
+   "orpha": null
+  },
+  {
    "unii": "U015TT5I8H",
    "name": "BISMUTH",
    "moiety": "BISMUTH",
@@ -49420,38 +49573,6 @@
     "Italy",
     "Portugal",
     "Spain"
-   ],
-   "orpha": null
-  },
-  {
-   "unii": "Y4F5ODM66L",
-   "name": "MAGNESIUM ASPARTATE DIHYDRATE",
-   "moiety": "",
-   "inn": false,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EU national (Art57)"
-   ],
-   "orphan": false,
-   "tier": "direct",
-   "examples": [
-    "Magnesium Aspartate Dihydrate"
-   ],
-   "area": "",
-   "atc": "",
-   "indication": "",
-   "approved": "",
-   "flags": [],
-   "foreign_status": "authorised",
-   "status_by_source": {
-    "EU national (Art57)": "authorised"
-   },
-   "n_countries": 3,
-   "countries": [
-    "Germany",
-    "Greece",
-    "United Kingdom (Northern Ireland)"
    ],
    "orpha": null
   },
@@ -49777,6 +49898,37 @@
    "countries": [
     "France",
     "Italy"
+   ],
+   "orpha": null
+  },
+  {
+   "unii": "R0YYF5RUG8",
+   "name": "AGOMELATINE UREA",
+   "moiety": "AGOMELATINE UREA",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "Agomelatine Urea"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 2,
+   "countries": [
+    "Germany",
+    "Hungary"
    ],
    "orpha": null
   },
@@ -50634,7 +50786,7 @@
    "indication": "",
    "approved": "",
    "flags": [
-    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED DRUG OTHER', 'UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
+    "US_NON_APPLICATION_MARKETING: sold in the US under ['UNAPPROVED HOMEOPATHIC']. Does NOT disqualify (s.529 bars a prior approval in a 505 application, which these are not) but there is no exclusivity runway and supply already exists \u2014 and rows like this are often excipients or antiseptics rather than drugs."
    ],
    "foreign_status": "authorised",
    "status_by_source": {
@@ -50803,6 +50955,36 @@
    "countries": [
     "Greece",
     "Spain"
+   ],
+   "orpha": null
+  },
+  {
+   "unii": "LB5DJT9FIW",
+   "name": ".ALPHA.-ESCIN",
+   "moiety": "ALPHA ESCIN",
+   "inn": false,
+   "usan": false,
+   "type": "chemical",
+   "sources": [
+    "EU national (Art57)"
+   ],
+   "orphan": false,
+   "tier": "exact-moiety",
+   "examples": [
+    "Alpha-Escin"
+   ],
+   "area": "",
+   "atc": "",
+   "indication": "",
+   "approved": "",
+   "flags": [],
+   "foreign_status": "authorised",
+   "status_by_source": {
+    "EU national (Art57)": "authorised"
+   },
+   "n_countries": 1,
+   "countries": [
+    "Slovakia"
    ],
    "orpha": null
   },
@@ -54351,9 +54533,9 @@
    "orpha": null
   },
   {
-   "unii": "S3V868548T",
-   "name": "TERPIN HYDRATE",
-   "moiety": "TERPINENE",
+   "unii": "MPF495B08R",
+   "name": "TERPIN",
+   "moiety": "TERPIN",
    "inn": false,
    "usan": false,
    "type": "chemical",
@@ -54363,7 +54545,7 @@
    "orphan": false,
    "tier": "exact-moiety",
    "examples": [
-    "Terpinene"
+    "Terpin"
    ],
    "area": "",
    "atc": "",
@@ -55693,10 +55875,9 @@
    "status_by_source": {
     "EU national (Art57)": "authorised"
    },
-   "n_countries": 3,
+   "n_countries": 2,
    "countries": [
     "Germany",
-    "Luxembourg",
     "United Kingdom (Northern Ireland)"
    ],
    "orpha": null,
@@ -58890,116 +59071,6 @@
    }
   },
   {
-   "unii": "N0JWC7RO00",
-   "name": "POVORCITINIB",
-   "moiety": "POVORCITINIB",
-   "inn": true,
-   "usan": true,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "moiety-base",
-   "examples": [
-    "povorcitinib phosphate"
-   ],
-   "area": "Hidradenitis Suppurativa",
-   "atc": "",
-   "indication": "Treatment of active moderate to severe hidradenitis suppurativa (acne inversa) in adults",
-   "approved": "",
-   "flags": [],
-   "foreign_status": "never_authorised",
-   "status_by_source": {
-    "EMA": "never_authorised"
-   },
-   "n_countries": 0,
-   "countries": [],
-   "orpha": null,
-   "eligibility": {
-    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
-    "criteria": [
-     {
-      "key": "no_prior_us_active_moiety",
-      "status": "PASS",
-      "decidability": "machine",
-      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
-      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
-     },
-     {
-      "key": "rare_under_200k",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(3)(B)",
-      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
-     },
-     {
-      "key": "primarily_pediatric",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
-     },
-     {
-      "key": "serious_or_life_threatening",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "seriousness not assessed"
-     },
-     {
-      "key": "qualifies_for_priority_review",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(4)(C)",
-      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
-     },
-     {
-      "key": "human_evidence_exists",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "evidence base for a 505(b)(1)",
-      "note": "no published human evidence located"
-     },
-     {
-      "key": "filed_as_505b1",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(B)(i)(II)",
-      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
-     },
-     {
-      "key": "relies_on_pediatric_data",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(D)",
-      "note": "sponsor's filing decision, not a drug property"
-     },
-     {
-      "key": "no_adult_indication_sought",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(E)",
-      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
-     },
-     {
-      "key": "voucher_awardable_before_sunset",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(b)(5)",
-      "note": "no projected approval date supplied"
-     },
-     {
-      "key": "approved_after_30_sep_2016",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(4)(F)",
-      "note": "no projected approval date supplied"
-     }
-    ]
-   }
-  },
-  {
    "unii": "721809WQCP",
    "name": "RUBOXISTAURIN",
    "moiety": "RUBOXISTAURIN",
@@ -59237,116 +59308,6 @@
    "area": "Prostatic Neoplasms",
    "atc": "",
    "indication": "",
-   "approved": "",
-   "flags": [],
-   "foreign_status": "never_authorised",
-   "status_by_source": {
-    "EMA": "never_authorised"
-   },
-   "n_countries": 0,
-   "countries": [],
-   "orpha": null,
-   "eligibility": {
-    "verdict": "LIKELY_ELIGIBLE_PENDING_REVIEW",
-    "criteria": [
-     {
-      "key": "no_prior_us_active_moiety",
-      "status": "PASS",
-      "decidability": "machine",
-      "citation": "s.529(a)(4)(B)(i)(I) / 360ff(a)(4)(B)(i)(I)",
-      "note": "no US approval found across UNII variants, string keys and GSRS relatives"
-     },
-     {
-      "key": "rare_under_200k",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(3)(B)",
-      "note": "US prevalence not supplied; no Orphanet match (a common-disease drug will not match)"
-     },
-     {
-      "key": "primarily_pediatric",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "no age-of-onset data resolved; must be read from Orphadata (if the disease is listed) or the literature"
-     },
-     {
-      "key": "serious_or_life_threatening",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(3)(A)",
-      "note": "seriousness not assessed"
-     },
-     {
-      "key": "qualifies_for_priority_review",
-      "status": "HUMAN",
-      "decidability": "judgment",
-      "citation": "s.529(a)(4)(C)",
-      "note": "requires the US treatment landscape for this exact indication and a view on whether the drug is a significant improvement"
-     },
-     {
-      "key": "human_evidence_exists",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "evidence base for a 505(b)(1)",
-      "note": "no published human evidence located"
-     },
-     {
-      "key": "filed_as_505b1",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(B)(i)(II)",
-      "note": "sponsor's filing decision; note Pub. L. 117-9 (2021) narrowed this to 505(b)(1) only, so a 505(b)(2) repurposing filing forfeits the voucher"
-     },
-     {
-      "key": "relies_on_pediatric_data",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(D)",
-      "note": "sponsor's filing decision, not a drug property"
-     },
-     {
-      "key": "no_adult_indication_sought",
-      "status": "HUMAN",
-      "decidability": "design",
-      "citation": "s.529(a)(4)(E)",
-      "note": "sponsor's filing decision, not a drug property. Per FDA's 2019 draft guidance (Q5) a label covering adults AND children with the SAME rare pediatric disease is fine (cf. ZANVASTRO 2026-09, Emcitate 2026-09); what (E) bars is a separate adult indication"
-     },
-     {
-      "key": "voucher_awardable_before_sunset",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(b)(5)",
-      "note": "no projected approval date supplied"
-     },
-     {
-      "key": "approved_after_30_sep_2016",
-      "status": "UNKNOWN",
-      "decidability": "data",
-      "citation": "s.529(a)(4)(F)",
-      "note": "no projected approval date supplied"
-     }
-    ]
-   }
-  },
-  {
-   "unii": "MNZ4OP95CF",
-   "name": "SENAPARIB",
-   "moiety": "SENAPARIB",
-   "inn": true,
-   "usan": false,
-   "type": "chemical",
-   "sources": [
-    "EMA"
-   ],
-   "orphan": false,
-   "tier": "exact-moiety",
-   "examples": [
-    "senaparib"
-   ],
-   "area": "Fallopian Tube Neoplasms;Peritoneal Neoplasms;Carcinoma, Ovarian Epithelial",
-   "atc": "L01XK07",
-   "indication": "Maintenance treatment of advanced epithelial high-grade ovarian, fallopian tube or primary peritoneal cancer",
    "approved": "",
    "flags": [],
    "foreign_status": "never_authorised",
@@ -59933,7 +59894,7 @@
    ]
   },
   "edgar": {
-   "total": 639,
+   "total": 695,
    "filers": [
     {
      "name": "Cadrenal Therapeutics, Inc. ",
@@ -60007,6 +59968,6 @@
     }
    ]
   },
-  "as_of": "2026-11-01 12:23"
+  "as_of": "2026-11-19 20:06"
  }
 }

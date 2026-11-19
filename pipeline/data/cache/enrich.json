@@ -6085,5 +6085,51 @@
   "trials": 1,
   "us_orphan": "unknown",
   "chembl": []
+ },
+ "N0JWC7RO00": {
+  "pubmed": 1,
+  "trials": 25,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Vitiligo",
+    "phase": 3.0
+   },
+   {
+    "disease": "Hidradenitis Suppurativa",
+    "phase": 3.0
+   },
+   {
+    "disease": "Asthma",
+    "phase": 2.0
+   },
+   {
+    "disease": "Prurigo",
+    "phase": 1.0
+   }
+  ]
+ },
+ "MNZ4OP95CF": {
+  "pubmed": 0,
+  "trials": 17,
+  "us_orphan": "unknown",
+  "chembl": [
+   {
+    "disease": "Ovarian Neoplasms",
+    "phase": 2.0
+   },
+   {
+    "disease": "Neoplasms",
+    "phase": 1.0
+   },
+   {
+    "disease": "Breast Neoplasms",
+    "phase": 1.0
+   },
+   {
+    "disease": "Prostatic Neoplasms, Castration-Resistant",
+    "phase": 1.0
+   }
+  ]
  }
 }
