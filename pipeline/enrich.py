@@ -52,7 +52,7 @@ def pubmed_count(name):
     """PubMed hits for the drug (clean moiety name) in a rare/pediatric context."""
     term = f'{name}[tiab] AND (rare disease[tiab] OR pediatric[tiab] OR paediatric[tiab] OR orphan[tiab] OR congenital[tiab])'
     url = ("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=0"
-           f"&tool=raredduxhedge&email=carterpry@gmail.com&term={q(term)}")
+           f"&tool=RareDiseaseArb&email=carterpry@gmail.com&term={q(term)}")
     d = get_json(url)
     return int(d["esearchresult"]["count"])
 

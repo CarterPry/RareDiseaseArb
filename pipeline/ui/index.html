@@ -575,7 +575,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.co
 /* export / import */
 document.getElementById('export').onclick=()=>{
   const blob=new Blob([JSON.stringify(triage,null,1)],{type:'application/json'});
-  const a=el('a');a.href=URL.createObjectURL(blob);a.download='rdh_notes_'+DATA.generated+'.json';a.click();
+  const a=el('a');a.href=URL.createObjectURL(blob);a.download='RareDiseaseArb_notes_'+DATA.generated+'.json';a.click();
 };
 document.getElementById('import').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();
   r.onload=()=>{try{triage=JSON.parse(r.result);saveTriage();render();}catch(err){alert('Invalid notes file');}};r.readAsText(f);};
