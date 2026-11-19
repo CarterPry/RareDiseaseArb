@@ -32,7 +32,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 PIPE = os.path.join(ROOT, "pipeline")
 SITE = os.path.join(HERE, "_site")
-BASE_URL = "https://arbs.raredisease.carterpry.com"
+BASE_URL = "https://raredisease.arbs.carterpry.com"
 
 
 # --------------------------------------------------------------- markdown -> html
